@@ -21,10 +21,10 @@
 title: ...horse?
 email: jake@dotdot.horse
 description: >- # this means to ignore newlines until "baseurl:"
-  PS + AD
+  PS + AD + AD CS + MVP
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: trimarcjake.github.io # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  TrimarcJake
+url: jakehildreth.github.io # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  jakehildreth
 author: Jake Hildreth
 
 # Build settings
