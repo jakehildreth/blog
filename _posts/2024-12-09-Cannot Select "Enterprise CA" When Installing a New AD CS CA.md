@@ -3,7 +3,6 @@ title: Cannot Select "Enterprise CA" When Installing a New AD CS CA
 creation_date: December 9, 2024
 modification_date: December 9, 2024
 ---
-
 I am in the midst of deploying Active Directory Certificate Services (AD CS) Certification Authority (CA) for a presentation I'm giving in 40 hours. (Hello, demo gods! We're still friends, right?)
 
 During the process, I decided to blow away the entire contents of my lab's Public Key Services container (CN=Public Key Services,Services,CN=Services,CN=Configuration,DC=BlueTuxedo,DC=DanglingSPNs,DC=lol) to "start clean". And in this process, I learned that AD CS will refuse to install in "Enterprise" mode without a Public Key Services container.
