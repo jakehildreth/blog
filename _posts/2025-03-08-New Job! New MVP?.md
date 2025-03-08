@@ -1,3 +1,7 @@
+---
+title: New Job! New MVP?
+creation_date: 2025-03-08
+---
 Hi.
 
 The last two months have been a whirlwind 🌪️ for me. I was a walking ball of FUD and nerves for a while, but I think I've emerged a better person. Let's go for a little journey!
