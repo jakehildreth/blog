@@ -3,7 +3,7 @@ As part of my research for [PowerPUG!](https://github.com/TrimarcJake/PowerPUG),
 2. Delegated principal
 3. Delegating principal
 4. Delegation source machine
-For PowerPUG!, don’t *really* care about identifying the delegation type, but each type leaves different artifacts, so it’s probably worth figuring out in the process. This article will serve as a diary of the process. 
+For PowerPUG!, I don’t *really* care about identifying the delegation type, but each type leaves different artifacts, so it’s probably worth figuring out in the process. This article will serve as a diary of the process. 
 ## What is Kerberos Delegation?
 
 In short, Kerberos delegation allows one principal to connect to a service on behalf of another principal. The specifics of how this happens vary wildly depending on delegation type.
