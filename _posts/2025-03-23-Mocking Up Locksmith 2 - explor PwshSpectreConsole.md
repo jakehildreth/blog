@@ -16,6 +16,8 @@ Saturday afternoon, I installed a new toilet seat with an integrated bidet on ou
 ![]({{ site.baseurl }}/images/NOTDarkRoom.png)
 If your room looks like this when you go to bed, buy some plywood.
 
+### Working With My Brain
+
 As for PowerShell tools, the only tool in my immediate radar is Locksmith 2. I'm going outside of my comfort zone in so many ways with LS2. I did research and took notes. I wrote up a product requirements document. I'm requirining a TUI and improved reporting. These are not things I'm good at. But I'm rarely one to back down from a challenge.
 
 I spent most of my Saturday morning and bit of my Sunday afternoon playing with PwshSpectreConsole ([https://pwshspectreconsole.com](https://pwshspectreconsole.com)), a PowerShell 7 wrapper for the Spectre.Console .NET library. In that time, I went through the entire PwshSpectreConsole site page by page to read and understand how to use the module.
