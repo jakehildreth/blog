@@ -4,7 +4,7 @@ title: PS> Get-User -Identity "Jake Hildreth"
 permalink: /about/
 ---
 # Hi! I'm Jake!
-<img src="images/NewCroppedMediumRes.png" height="200" width="200">
+<img src="{{ site.baseurl }}/images/NewCroppedMediumRes.png" height="200" width="200">
 ### Husband, Dad, Recovering Sysadmin • Principal Security Consultant @ Semperis • Microsoft MVP (PowerShell/Identity) • I tend gardens, gather rakes, and wear hats.
 
 ### About:
