@@ -62,6 +62,7 @@ Spectacle was great, but it stop being maintained. I prefer to avoid unmaintaine
 With a few easy-to-learn keyboard shortcuts, I could now snap to my heart's content. I especially like Rectangle's top-right/top-left/bottom-right/bottom-left shortcuts for breaking a screen into 4 windows. Yes, I usually have 4 windows open simultaneously now. 🤦
 
 >Note: macOS didn't have window snapping natively until **2024**!
+
 ### ~~SlowQuitApps - [github.com](https://github.com/dteoh/SlowQuitApps)~~
 I really want to know who decided to put the "Switch Applications" shortcut (Command + Tab) and the "Close Window" shortcut (Command + W) right next to the "Quit Application" shortcut (Command + Q). This configuration probably made sense until the advent of tabbed interfaces. Since then, it's caused me so much strife. Usually I just want to close the current tab, not all the tabs!
 
@@ -143,6 +144,7 @@ Almost everyone I know in the cybersecurity community complains about the number
 - \[REDACTED\]
 - PDQ
 - [Spencer Alessi](https://www.linkedin.com/in/spenceralessi/)'s Ethical Threat
+
 ### Slack - [slack.com](https://slack.com)
 Slack is where the BloodHound Gang hangs out. I'm not a BloodHound user, but there are some great conversations about Active Directory security there, so ya gotta join.
 ### Spotify - [spotify.com](https://spotify.com)
