@@ -153,6 +153,6 @@ I frequently have music playing when I'm home alone. I probably should pay for a
 ## Conclusion
 Starting fresh on a new Mac has been shockingly painless. I thought I'd need to bring over more of my "stuff" to feel comfortable, but taking a moment to evaluate what I actually use has been incredibly worthwhile. For sure this list isn’t exhaustive (I've definitely installed a few more pieces of software in the week since I started writing this article!), but it captures the tools and tweaks that make macOS feel like home to me without dragging along two decades of cruft.
 
-If you're moving to a Mac from Windows/Linux, or you've decided to relieve yourself of your Time Machine chains, I hope this guide helps you find your footing. BTW: if you have essential software I didn’t mention, I’d love to hear about them! I'm always looking for new ways to improve my work environment. Send me an email: [jake@dotdot.horse][mailto:jake@dotdot.horse]
+If you're moving to a Mac from Windows/Linux, or you've decided to relieve yourself of your Time Machine chains, I hope this guide helps you find your footing. BTW: if you have essential software I didn’t mention, I’d love to hear about them! I'm always looking for new ways to improve my work environment. Send me an email: [jake@dotdot.horse](mailto:jake@dotdot.horse)
 
 Happy configuring!
