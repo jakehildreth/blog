@@ -11,7 +11,7 @@ I recently got a new MacBook Pro (with an M4 Pro!) from work. As I pulled the ch
 - Better Versions of macOS Features
 	- Alfred - [alfredapp.com](https://alfredapp.com)
 	- Rectangle - [rectangleapp.com](https://rectangleapp.com)
-	- ~~Rectangle - [github.com](https://github.com/dteoh/SlowQuitApps)~~
+	- ~~SlowQuitApps - [github.com](https://github.com/dteoh/SlowQuitApps)~~
 	- Hammerspoon - [hammerspoon.org](https://www.hammerspoon.org)
 - The Package Manage that Should Exist in macOS
 	- Homebrew - [brew.sh](https://brew.sh)
