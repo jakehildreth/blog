@@ -9,28 +9,29 @@ modification_date: April 13, 2025
 I recently got a new MacBook Pro (with an M4 Pro!) from work. As I pulled the chonky boy out of its box, I made a conscious decision to avoid transferring 19 years of technical baggage to it. Instead, I've decided to document the bare minimum software I need on a Mac to feel productive - and a few less-necessary but still important packages.
 ## The tl;dr
 - Better Versions of macOS Features
-	- [Alfred](#Alfred%20-%20[alfredapp.com](https%20//alfredapp.com)) - [alfredapp.com](https://alfredapp.com)
-	- [Rectangle](#Rectangle%20-%20[rectangleapp.com](https%20//rectangleapp.com)) - [rectangleapp.com](https://rectangleapp.com)
-	- ~~[SlowQuitApps](#SlowQuitApps%20-%20[github.com](https%20//github.com/dteoh/SlowQuitApps)) - [github.com](https://github.com/dteoh/SlowQuitApps)~~
-	- [Hammerspoon](#Hammerspoon%20-%20[hammerspoon.org](https%20//www.hammerspoon.org)) - [hammerspoon.org](https://www.hammerspoon.org)
+	- Alfred - [alfredapp.com](https://alfredapp.com)
+	- Rectangle - [rectangleapp.com](https://rectangleapp.com)
+	- ~~Rectangle - [github.com](https://github.com/dteoh/SlowQuitApps)~~
+	- Hammerspoon - [hammerspoon.org](https://www.hammerspoon.org)
 - The Package Manage that Should Exist in macOS
-	- [Homebrew](#Homebrew%20-%20brew.sh) - [brew.sh](https://brew.sh)
+	- Homebrew - [brew.sh](https://brew.sh)
 - Development Stuff
-	- [git](#git%20-%20[git-scm.com](https%20//git-scm.com/downloads/mac)) - [git-scm.com](https://git-scm.com/downloads/mac)
-	- [PowerShell 7](#PowerShell%207%20-%20[github.com]([https%20//github.com/PowerShell/PowerShell](https%20//github.com/PowerShell/PowerShell)) - [github.com]([https://github.com/PowerShell/PowerShell](https://github.com/PowerShell/PowerShell))
-	- [Visual Studio Code](#Visual%20Studio%20Code%20-%20[code.visualstudio.com](https%20//code.visualstudio.com/docs/?dv=darwinarm64)) - [code.visualstudio.com](https://code.visualstudio.com/docs/?dv=darwinarm64)
-	- [VS Code PowerShell Extension](#VS%20Code%20PowerShell%20Extension%20-%20[marketplace.visualstudio.com](https%20//marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)) - [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-	- [Terminal.app Space Grey Theme](#Terminal.app%20Space%20Grey%20Theme%20-%20[github.com](https%20//github.com/lysyi3m/macos-terminal-themes)) - [github.com](https://github.com/lysyi3m/macos-terminal-themes)
-	- [JetBrains Mono Font](#JetBrains%20Mono%20Font%20-%20[jetbrains.com](https%20//www.jetbrains.com/lp/mono/)) - [jetbrains.com](https://www.jetbrains.com/lp/mono/)
+	- git- [git-scm.com](https://git-scm.com/downloads/mac)
+	- Powershell 7 - [github.com]([https://github.com/PowerShell/PowerShell](https://github.com/PowerShell/PowerShell))
+	- Visual Studio Code - [code.visualstudio.com](https://code.visualstudio.com/docs/?dv=darwinarm64)
+	- VS Code PowerShell Extension - [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+	- Terminal.app SpaceGray Theme - [github.com](https://github.com/lysyi3m/macos-terminal-themes)
+	- JetBrains Mono Font - [jetbrains.com](https://www.jetbrains.com/lp/mono/)
 - Working with Windows
-	- [Windows App](#Windows%20App%20-%20[Mac%20App%20Store](https%20//apps.apple.com/us/app/windows-app/id1295203466?mt=12)%20or%20[microsoft.com](https%20//go.microsoft.com/fwlink/?linkid=868963)) - [Mac App Store](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) or [microsoft.com](https://go.microsoft.com/fwlink/?linkid=868963)
-	- [UTM](#UTM%20-%20[getutm.app](https%20//docs.getutm.app/installation/macos/)) - [getutm.app](https://docs.getutm.app/installation/macos/)
+	- Windows App - [Mac App Store](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) or [microsoft.com](https://go.microsoft.com/fwlink/?linkid=868963)
+	- UTM - [getutm.app](https://docs.getutm.app/installation/macos/)
 - Everything Else!
-	- [Camo Studio](#Camo%20Studio%20-%20[reincubate.com](https%20//reincubate.com/camo/)) - [reincubate.com](https://reincubate.com/camo/)
-	- [Logi Tune](#Logi%20Tune%20-%20[logitech.com](https%20//www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html)) - [logitech.com](https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html)
-	- [Mattermost](#Mattermost%20-%20[mattermost.com](https%20//mattermost.com/apps/)) - [mattermost.com](https://mattermost.com/apps/)
-	- [Discord](#Discord%20-%20[discord.com](https%20//discord.com)) - [discord.com](https://discord.com)
-	- [Slack](#Slack%20-%20[slack.com](https%20//slack.com)) - [slack.com](https://slack.com)
+	- Camo Studio - [reincubate.com](https://reincubate.com/camo/)
+	- Logi Tune - [logitech.com](https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html)
+	- Mattermost - [mattermost.com](https://mattermost.com/apps/)
+	- Discord - [discord.com](https://discord.com)
+	- Slack - [slack.com](https://slack.com)
+
 ## Better Versions of macOS Features
 When I first started using a Mac, I was so confused by most of the interface choices. But after a few months, I let go of my hangups and just went wih the vibes. Things generally feel smoother on a Mac than on Windows, though Windows 10/2016 and higher are pretty smooth too.
 
@@ -137,13 +138,13 @@ I have a Logitech Brio, and the only way to enable its HDR support is through th
 The Locksmith core team communicates on a Mattermost server that I run on Oracle Cloud. I might open it up to Locksmith users in the near-future if there's interest!
 ### Discord - [discord.com](https://discord.com)
 Almost everyone I know in the cybersecurity community complains about the number of Discord servers they have to take part in, and I'm no exception. And I don't even join that many!
-- [rand0h(https://www.linkedin.com/in/dakacki/)]'s HackerStream
+- [rand0h](https://www.linkedin.com/in/dakacki/)'s HackerStream
 - Red Siege
 - Four (4) BHIS-related groups
 - PowerShell
 - \[REDACTED\]
 - PDQ
-- [Spencer Alessi](https://www.linkedin.com/in/spenceralessi/)'s Ethical Threat
+- [techSpence](https://www.linkedin.com/in/spenceralessi/)'s Ethical Threat
 
 ### Slack - [slack.com](https://slack.com)
 Slack is where the BloodHound Gang hangs out. I'm not a BloodHound user, but there are some great conversations about Active Directory security there, so ya gotta join.
