@@ -4,7 +4,7 @@ creation_date: April 6, 2025
 modification_date: April 13, 2025
 ---
 ## Intro
-[As previously discussed](_posts/2024-06-24-Virtualizing%20Windows%20Server%202025%20on%20Apple%20Silicon.md), I'm a macOS-first user. Windows and Linux and [TempleOS](https://github.com/cia-foundation/TempleOS) each have their time and place, but if I'm most comfortable in front of a Mac. Over the past 19 years of Mac use, I've modified almost everything about my Macs' setups. Thanks to Time Machine, those mods persist from old machine to new machine. Unfortunately, the quirkiness of my machine sometimes results in being confused by Macs in a more pristine state like my wife's Mac (almost stock standard!)
+[As previously discussed](_posts/2024-06-24-Virtualizing%20Windows%20Server%202025%20on%20Apple%20Silicon.md), I'm a macOS-first user. Windows and Linux and [TempleOS](https://github.com/cia-foundation/TempleOS) each have their time and place, but I'm most comfortable in front of a Mac. Over the past 19 years of Mac use, I've modified almost everything about my Macs' setups. Thanks to Time Machine, those mods persist from old machine to new machine. Unfortunately, the quirkiness of my machine sometimes results in being confused by Macs in a more pristine state like my wife's Mac (almost stock standard!)
 
 I recently got a new MacBook Pro (with an M4 Pro!) from work. As I pulled the chonky boy out of its box, I made a conscious decision to avoid transferring 19 years of technical baggage to it. Instead, I've decided to document the bare minimum software I need on a Mac to feel productive - and a few less-necessary but still important packages.
 ## The tl;dr
