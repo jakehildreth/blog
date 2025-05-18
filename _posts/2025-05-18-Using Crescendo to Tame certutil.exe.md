@@ -73,7 +73,7 @@ But in the last few weeks, I've picked it back up. In the intervening months, I'
 
 After a few weekends of work, I finally got everything working in PS7! I ran into a small hurdle getting some functions working in PS5.1, but Stevie helped me out there too.
 
-Here it is: https://github.com/jakehildreth/PSCertutil
+Here it is: [https://github.com/jakehildreth/PSCertutil](https://github.com/jakehildreth/PSCertutil)
 
 Some notes: 
 - I've only added the features *I need* to get going in Locksmith 2.
@@ -86,6 +86,6 @@ And after:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250518081012.png)
 If you're a PowerSheller, I hope you see the improvement! Even if you're not a PowerSheller, I bet you see an improvement.
 
-Anyway, my daughter just woke up, so it's time to make breakfast. If you made it this far, please try out [PSCertutil](https://github.com/jakehildreth/PSCertutil) and let me know what you think. All my contact info is at http://jakehildreth.com. 
+Anyway, my daughter just woke up, so it's time to make breakfast. If you made it this far, please try out [PSCertutil](https://github.com/jakehildreth/PSCertutil) and let me know what you think. All my contact info is at [http://jakehildreth.com](http://jakehildreth.com). 
 
 Until next time, friends!
