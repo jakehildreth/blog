@@ -1,7 +1,7 @@
 ---
 title: Using Crescendo to Tame certutil.exe
 creation_date: 2025-05-10
-modification_date: 2025-05-18
+modification_date: 2025-05-26
 ---
 ![]({{ site.baseurl }}/images/gold-lights-shining-illustration-vector.jpg)In the beginning of Active Directory Certificate Services (AD CS), there was `certutil.exe`, and it was good... enough.
 
@@ -30,7 +30,7 @@ Work began in earnest a little before the end of 2024. Q1 2025 was spent doing r
 But one of the biggest prereqs for LS2 is a PowerShell wrapper for `certutil.exe`.  
 
 ## Certutil is dead. Long live Certutil!
-As mentioned above, `certutil.exe` is a way to interact with AD CS. It's a swiss army knife of functionality with an absolutely wild array of functions. Certificate issuance history, Certification Authority (CA) configuration, access controls (ACEs) on certificate templates, Enrollment Agent Rights, and a whole slew of other stuff. Most of its most powerful functionality is hidden behind a mostly unintelligble combination of switches and registry shortcuts.
+As mentioned above, `certutil.exe` is a way to interact with AD CS. It's a swiss army knife of functionality with an absolutely wild array of use cases. Certificate issuance history, Certification Authority (CA) configuration, access controls (ACEs) on certificate templates, Enrollment Agent Rights, and a whole slew of other stuff. Most of its most powerful functionality is hidden behind a mostly unintelligble combination of switches and registry shortcuts.
 
 Seriously, what is this?
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250518070904.png)
@@ -84,7 +84,7 @@ But for my own use, it's more than enough! I mean, look at the output before:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250518080835.png)
 And after:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250518081012.png)
-If you're a PowerSheller, I hope you see the improvement! Even if you're not a PowerSheller, I bet you see an improvement.
+Even if you're not a PowerSheller, I bet you see an improvement!
 
 Anyway, my daughter just woke up, so it's time to make breakfast. If you made it this far, please try out [PSCertutil](https://github.com/jakehildreth/PSCertutil) and let me know what you think. All my contact info is at [http://jakehildreth.com](http://jakehildreth.com). 
 
