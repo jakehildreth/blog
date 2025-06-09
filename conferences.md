@@ -3,16 +3,7 @@ layout: page
 title: conferences
 permalink: /conferences/
 ---
-I like going to conferences, espcially if I'm speaking. I plan to be at the following cons in the near-future.
-
-#### Hackers Teaching Hackers
-- June 5-6, 2025
-- BrewDog's DogHouse Hotel
-- Canal Winchester (Columbus), OH
-- [hthackers.com](https://hthackers.com)
-
-A super-cool con held at a hotel that is also a brewpub. My buddy [Spencer Alessi](https://www.linkedin.com/in/spenceralessi/) is one of the keynote speakers! June 5 is all about training and villages. June 6 is all about talks.
-
+I like going to conferences, especially if I'm speaking. I plan to be at the following cons in the near-future.
 #### Blue Team Con
 - September 6-7, 2025
 - Fairmont Chicago, Millenium Park
