@@ -38,6 +38,7 @@ To quote Gilbert:
 3. It auto generates your docs via PlatyPS.
 4. Ready for deploying to the CI tool of your choice.
 5. Includes VSCode configs that make developing your code easy!
+
 ## Stucco is Dead. Long Live PSStucco!
 After reading the rest of Gilbert's article, I decided it was time to dive in...
 
@@ -59,6 +60,7 @@ In this section, I am going to step through the following sections of Gilbert's 
 5. [Commit your code](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#commit)
 6. [Prep for PSGallery](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#psgallery)
 7. [Publish your module](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#publish)
+
 ### [Install ~~Stucco~~ PSStucco](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#install)
 ```powershell
 Install-Module -Name PSStucco -Scope CurrentUser -Force
@@ -94,8 +96,10 @@ Gilbert describes how to commit code using the command line, but since we're wor
 2. Then you want to describe your changes with a "commit message" and click the "Commit" button:
 ![A screenshot highlighting an example commit message.]({{ site.baseurl }}/images/Pasted%20image%2020250702090920.png)
 3. After you've committed your changes, you need to push said changes from your local repository to the remote repository. You can do this by clicking the "Publish Branch" button... that I forgot to screenshot!
+
 ### [Setup PSGallery](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#psgallery)
 No notes here, either. 👏
+
 ### [Publish Your Module!](https://gilbertsanchez.com/posts/stucco-create-powershell-module/#publish)
 Once you're built your cool module that does cool things, you can use GitHub Actions to publish your module directly to the PowerShell Gallery. GitHub Actions are configured using YAML files placed in your repository's `.github/workflows` directory. You can do ALL kinds of cool stuff with GitHub Actions (and I really need to learn how to use them more.)
 
@@ -139,6 +143,7 @@ This set of actions will run every time new changes are committed to the `main` 
 
 Quoth the Gilbert:
 > And that’s it! You now have a module that’s testable, open source, and automatically published to the PowerShell Gallery!
+
 ## Wrap Up
 I hope I was able to clear up some of the hiccups you may run into when trying to use PSStucco, but please read Gilbert's original article first. If you have any questions or comments, feel free to reach out. I love to chat with folks about PowerShell!
 ## References
