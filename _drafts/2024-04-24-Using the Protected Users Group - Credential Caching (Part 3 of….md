@@ -1,9 +1,7 @@
 ---
 title: Using the Protected Users Group - Credential Caching (Part 3 of…
-creation_date: April 24, 2024
-modification_date: May 2, 2024
+creation_date: 2024-04-24
+modification_date: 2025-07-04
 ---
 
-
-# Using the Protected Users Group - Credential Caching (Part 3 of ?)
 
