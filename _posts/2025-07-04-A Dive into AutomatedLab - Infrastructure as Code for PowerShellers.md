@@ -100,6 +100,7 @@ Up until this command, you've just been defining your lab. But now, the magic ha
 * runs Pester tests to verify deployment occurred as expected
 * and so much more!
 It's really wild to watch it all occur without any interaction. Here's an example of output you'd see while deploying:
+
 ``` powershell
 ~
 PS> Install-Lab
