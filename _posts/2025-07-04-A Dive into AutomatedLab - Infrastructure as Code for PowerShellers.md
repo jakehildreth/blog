@@ -21,70 +21,79 @@ AutomatedLab has been around for a while. The [AL repository](https://github.com
 ## What Can AL Do For You?
 If you're a Windows admin, you're likely at least *familiar* with PowerShell. And that means you've seen the "Verb-Noun" structure of PowerShell commands and cmdlets. While sometimes overly verbose (ahem... Graph), PowerShell makes it really easy for non-developers to dip their toes into development concepts without feeling like you're learning a foreign language.
 
-AutomatedLab takes advantage of the average Windows admin's PowerShelly knowledge to wrap a ton of functionality up into easy-to-use cmdlets that are fairly descriptive and require minimal training to understand. Each cmdlet describes a task to be completed during typical lab setup stuff.
+AutomatedLab takes advantage of the average Windows admin's PowerShelly knowledge to wrap a ton of functionality up into easy-to-use cmdlets that are fairly descriptive and require minimal training to understand. Each cmdlet performs a typical task to be completed during typical lab setup stuff. And many of the cmdlets require little-to-no configuration to work properly.
 
-As an example, let's step through one of the sample scripts provided in the AL package: [SmallLab 2012R2 Single Server.ps](https://github.com/AutomatedLab/AutomatedLab/blob/develop/LabSources/SampleScripts/HyperV/SmallLab%202012R2%20Single%20Server.ps1)
+As an example, let's step through one of the sample scripts provided in the AL package: [`SmallLab 2012R2 Single Server.ps1`](https://github.com/AutomatedLab/AutomatedLab/blob/develop/LabSources/SampleScripts/HyperV/SmallLab%202012R2%20Single%20Server.ps1) This script deploys a Domain Controller and a member server in a single-domain Active Directory (AD) forest.
+### Prerequisites
+To follow along at home, you need the following:
+* A host machine with 8GB memory, 6GB free space, and Hyper-V enabled
+* A Windows Server 2012 R2 Datacenter ISO
+* A Windows Server 2008 R2 Datacenter ISO
+* The AutomatedLab module installed
+* An elevated PowerShell 7 session
+To install AL, you can do `Install-Module -Name AutomatedLab -Scope CurrentUser -Force` or grab the latest MSI installer from https://github.com/AutomatedLab/AutomatedLab/releases
 
+After installation, place your ISOs in `C:\LabSources\ISOs`. To view the whole example script at once, you can find a copy of `SmallLab 2012R2 Single Server.ps1` in `C:\LabSources\SampleScripts\HyperV\`.
+
+BTW: If you don't have ISOs for those old af OSes, you can use the Server 2022 ISO instead. Just replace the Operating System names in the script/examples with `Windows Server 2022 Datacenter (Desktop Experience)`. Are you too ~~lazy~~ efficient to modify the script yourself? No worries. Get a copy here: [`SmallLab 2022 Single Server.ps1`](https://gist.github.com/jakehildreth/beb08e5ce20c6f6f2c8ff5e967eb1e0c#file-smalllab-2022-single-server-ps1)
+
+Alright, let's do itttttttt.
+### A Lab Has ~~No~~ a Name
+Every lab needs a name! This line sets the lab's name for use later in the script.
 ``` powershell
 $labName = 'SmallServer1'
 ```
-Every lab needs a name! This line defines the lab name for use later in the script.
-
+### A Lab Must Be Defined
+This command creates the required file structure for your current lab. By default, this is just a folder in `C:\ProgramData\AutomatedLab\Labs\` named after `$labName`. In this folder, AL stores all lab configuration data as XML files. Don't worry, you ~~don't~~ shouldn't need to dig into the XML directly. 
 ``` powershell
 #create an empty lab template and define where the lab XML files and the VMs will be stored
 New-LabDefinition -Name $labName -DefaultVirtualizationEngine HyperV
 ```
-This command creates the required file structure for your current lab. By default, this is just a folder in `C:\ProgramData\AutomatedLab\Labs\` named after `$labName`. In this folder, AL stores all lab configuration data as XML files. Don't worry, you ~~don't~~ shouldn't need to dig into the XML directly. 
-
-Cool thing: if you don't define your lab's `-Name`, a semi-random name is generated for you. 😎
-
+**Cool thing:** if you don't define your lab's `-Name`, a semi-random name is generated for you. 😎
+### A Lab Needs a Network
+A virtual network is needed to allow the VMs in your lab to communicate with each other. By default, this is an "Internal" network. In Hyper-V parlance, this means a network where the VMs can communicate with the host. You can also configure External switches which allow the VMs internet access, but that's outside the scope of this article.
 ``` powershell
 #make the network definition
 Add-LabVirtualNetworkDefinition -Name $labName -AddressSpace 192.168.81.0/24
 ```
-A virtual network is needed to allow the VMs in your lab to communicate with each other. By default, this is an "Internal" network. In Hyper-V parlance, this means a network where the VMs can communicate with the host. You can also configure External switches which allow the VMs internet access, but that's outside the scope of this article.
-
-Cool things: if you don't define an `-AddressSpace`, AL will find an available 192.168.x.x network on your behalf. 😎
-
+**Cool things:** if you don't define an `-AddressSpace`, AL will find an available 192.168.x.x network on your behalf. 😎
+### Lab Machines Need Local Admins
+To install required software, you need a local administrator account. This command defines the admin's name and password. 
 ``` powershell
 Set-LabInstallationCredential -Username Install -Password Somepass1
 ```
-To install required software, you need a local administrator account. This command defines the admin's name and password. 
-
-Cool things: if you don't run this command, the local administrator username is set to "Administrator". If you don't define the password, it gets set to "Somepass1". 😎
-
+**Cool thing:** if you don't run this command, the local administrator username is set to "Administrator". If you don't define the password, it gets set to "Somepass1". 😎
+### My Labs Need Active Directory
+Active Directory (AD) is still the most used identity platform in the world, so it's likely you'll want to have AD in your lab. AD literally pays my bills, so I sort of *have* to include it. This command defines the root domain of the forest along with the domain administrator's username and password.
 ``` powershell
 #and the domain definition with the domain admin account
 Add-LabDomainDefinition -Name test1.net -AdminUser Install -AdminPassword Somepass1
 ```
-Active Directory (AD) is still the most used identity platform in the world, so it's likely you'll want to have AD in your lab. AD literally pays my bills, so I sort of *have* to include it. This command defines the root domain of the forest along with the domain administrator's username and password.
-
-Cool thing: you don't *have* to run this command at all. If you define a `-DomainName` when defining your Domain Controller (DC) machine (shown below), the root domain is still created. In this case, the `-AdminUser` is "Administrator" and the `-AdminPassword` is "Somepass1". 😎
-
+**Cool thing:** you don't *have* to run this command at all. If you define a `-DomainName` when defining your Domain Controller (DC) machine (shown below), the root domain is still created. In this case, the domain administrator's username is "Administrator" and its password is "Somepass1". 😎
+### Active Directory Needs a Domain Controller
+AD requires a DC. Sorry, I guess? This command defines all the stuff a VM needs including the "Role" the VM will play in your lab. Along with `RootDC`, there are a bazillion other [Available Roles](https://automatedlab.org/en/latest/Wiki/Roles/roles/) to assign your VMs. Some interesting ones I've used are `CaRoot`, `FirstChildDC`, and `WindowsAdminCenter`.
 ``` powershell
 #the first machine is the root domain controller. Everything in $labSources\Tools get copied to the machine's Windows folder
 Add-LabMachineDefinition -Name S1DC1 -Memory 512MB -Network $labName -IpAddress 192.168.81.10 `
     -DnsServer1 192.168.81.10 -DomainName test1.net -Roles RootDC `
     -ToolsPath $labSources\Tools -OperatingSystem 'Windows Server 2012 R2 Datacenter (Server with a GUI)'
 ```
-AD requires a DC. Sorry, I guess? This command defines all the stuff a VM needs including the "Role" the VM will play in your lab. Along with `RootDC`, there are a bazillion other [Available Roles](https://automatedlab.org/en/latest/Wiki/Roles/roles/) to assign your VMs. Some interesting ones I've used are `CaRoot`, `FirstChildDC`, and `WindowsAdminCenter`.
-
-Cool thing... half this stuff is also unnecessary. AL just figures it out for you. 😎
-
+**Cool thing:** half this stuff is also unnecessary. AL just figures it out for you. 😎
+### (Most) Labs Need Tools
+This is just another server. Not much interesting here except... do you see that `-ToolsPath $labSources\Tools` bit? You can use AL to copy over a bunch of tools you may need on your VMs. For example, I currently copy over Locksmith, Certify, and Rubeus in all my installs.
 ``` powershell
 #the second just a member server. Everything in $labSources\Tools get copied to the machine's Windows folder
 Add-LabMachineDefinition -Name S1Server1 -Memory 512MB -Network $labName -IpAddress 192.168.81.20 `
     -DnsServer1 192.168.81.10 -DomainName test1.net -ToolsPath $labSources\Tools `
     -OperatingSystem 'Windows Server 2008 R2 Datacenter (Full Installation)'
 ```
-This is just another server. Not much interesting here except... do you see that `-ToolsPath $labSources\Tools` bit? You can use AL to copy over a bunch of tools you may need on your VMs. For example, I currently copy over Locksmith, Certify, and Rubeus in all my installs.
-
-Cool thing: the directory shown in `-ToolsPath` is automatically excluded from Windows Defender. Load up your hax!! 😎
-
+**Cool thing:** the directory shown in `-ToolsPath` is automatically excluded from Windows Defender. Load up your hax!! 😎
+### Is it Lab Yet?
+Up until now, you've just been defining your lab. But with this command:
 ``` powershell
 Install-Lab
 ```
-Up until this command, you've just been defining your lab. But now, the magic happens. AL starts doing its thing. In this step, AL does one or more of the following:
+ The magic happens, and AL starts doing its thing. In this step, AL does one or more of the following:
 * creates the network
 * loads the required ISOs
 * creates a virtual hard disk for each VM
@@ -100,7 +109,6 @@ Up until this command, you've just been defining your lab. But now, the magic ha
 * runs Pester tests to verify deployment occurred as expected
 * and so much more!
 It's really wild to watch it all occur without any interaction. Here's an example of output you'd see while deploying:
-
 ``` powershell
 ~
 PS> Install-Lab
@@ -139,7 +147,7 @@ Running tests.
 Tests completed in 7.83s
 Tests Passed: 5, Failed: 0, Skipped: 0, Inconclusive: 0, NotRun: 58
 ```
-
+### That *Was* Cool... But What Happened?
 And finally...
 ``` powershell
 Show-LabDeploymentSummary
@@ -180,15 +188,25 @@ PS> Show-LabDeploymentSummary
 09:54:13|00:46:30|00:09:09.362| - Get-LabInternetFile downloads files from the internet and places them on LabSources (locally or on Azure)
 09:54:13|00:46:30|00:09:09.363| ---------------------------------------------------------------------------
 ```
+### Now You Try!
+So now that you understand what's happening in the script, you can try it yourself! Open an elevated PowerShell 7 prompt and run the following:
+``` powershell
+& 'C:\LabSources\SampleScripts\HyperV\SmallLab 2012R2 Single Server.ps1'
+```
 
-When you're all done with your lab (or... let's be honest here... screwed it up beyond repair), you can run one command to remove all your VMs, switches, virtual hard disks, etc.:
+OR if you downloaded the 2022 version linked above:
+``` powershell
+& 'C:\[DOWNLOAD_LOCATION]\SmallLab 2022 Single Server.ps1'
+```
+### Clean Up, Clean Up
+When you're all done with your lab (or... let's be honest here... screwed it up beyond repair 🤷), you can run one command to remove all your VMs, switches, virtual hard disks, etc.:
 ``` powershell
 Remove-Lab
 ```
 
 Example:
 ``` powershell
-PS> REmove-Lab
+PS> Remove-Lab
 
 Confirm
 Are you sure you want to perform this action?
@@ -208,6 +226,7 @@ Performing the operation "Remove the lab completely" on target "SmallServer1".
 09:55:05|00:47:22|00:00:04.363| - Removing Lab XML files
 09:55:05|00:47:22|00:00:04.382| - Done removing lab 'SmallServer1'
 ```
+Check your Hyper-V Management console. All clean!
 ## What Else Can AL Do For You?
 Do you prefer to run VMs on Azure? AL's got you.
 
@@ -218,7 +237,6 @@ Do you want to run post-installation configuration tasks? No problem!
 Want to run multiple labs simulaneously? Sure!
 
 There's a bunch more, but I'm just starting my AL journey. So maybe I'll write a follow-on article down the road. Maybe. Lotta squirrels out there to look at.
-
 ## What Can *I* Do For You Today?
 In early June, I started playing with AutomatedLab more seriously. I wanted to create a script that would create a small PKI-focused lab for use when working on Locksmith, Locksmith 2, and ESCalator. I wanted v0.0.1 of the script to have the following specs:
 * Must create a lab including:
