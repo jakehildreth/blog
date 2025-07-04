@@ -108,6 +108,7 @@ Install-Lab
 * runs post-install scripts
 * runs Pester tests to verify deployment occurred as expected
 * and so much more!
+
 It's really wild to watch it all occur without any interaction. Here's an example of output you'd see while deploying:
 ``` powershell
 ~
