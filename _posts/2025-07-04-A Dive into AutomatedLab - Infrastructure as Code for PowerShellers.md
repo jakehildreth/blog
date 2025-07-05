@@ -32,7 +32,7 @@ To follow along at home, you need the following:
 * The AutomatedLab module installed
 * An elevated PowerShell 7 session
 
-To install AL, you can do `Install-Module -Name AutomatedLab -Scope CurrentUser -Force` or grab the latest MSI installer from https://github.com/AutomatedLab/AutomatedLab/releases
+To install AL, you can do `Install-Module -Name AutomatedLab -Scope CurrentUser -Force` or grab the latest MSI installer from [https://github.com/AutomatedLab/AutomatedLab/releases](https://github.com/AutomatedLab/AutomatedLab/releases).
 
 After installation, place your ISOs in `C:\LabSources\ISOs`. To view the whole example script at once, you can find a copy of `SmallLab 2012R2 Single Server.ps1` in `C:\LabSources\SampleScripts\HyperV\`.
 
