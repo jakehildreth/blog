@@ -1,7 +1,7 @@
 ---
 title: A Dive into AutomatedLab - Infrastructure as Code for PowerShellers
 creation_date: 2025-05-16
-modification_date: 2025-07-04
+modification_date: 2025-07-05
 ---
 ![AutomatedLab Logo]({{ site.baseurl }}/images/Pasted%20image%2020250704101624.png)
 
@@ -31,6 +31,7 @@ To follow along at home, you need the following:
 * A Windows Server 2008 R2 Datacenter ISO
 * The AutomatedLab module installed
 * An elevated PowerShell 7 session
+
 To install AL, you can do `Install-Module -Name AutomatedLab -Scope CurrentUser -Force` or grab the latest MSI installer from https://github.com/AutomatedLab/AutomatedLab/releases
 
 After installation, place your ISOs in `C:\LabSources\ISOs`. To view the whole example script at once, you can find a copy of `SmallLab 2012R2 Single Server.ps1` in `C:\LabSources\SampleScripts\HyperV\`.
@@ -199,6 +200,8 @@ OR if you downloaded the 2022 version linked above:
 ``` powershell
 & 'C:\[DOWNLOAD_LOCATION]\SmallLab 2022 Single Server.ps1'
 ```
+
+In a while, you'll have a lab!
 ### Clean Up, Clean Up
 When you're all done with your lab (or... let's be honest here... screwed it up beyond repair 🤷), you can run one command to remove all your VMs, switches, virtual hard disks, etc.:
 ``` powershell
@@ -252,6 +255,6 @@ In early June, I started playing with AutomatedLab more seriously. I wanted to c
 
 Does that sound like something you want? If so, I present [`Build-ALPKILab.ps1`](https://gist.github.com/jakehildreth/d7e00d2d342896caab3d27d0344280f7#file-build-alpkilab-ps1). This script is super-simple and doesn't do even ⅓ of the things I want the final script to do. But what it *does* do is pretty cool. Give it a Lab Name and a Domain Name and sometime later, you have a fresh lab loaded with stuff you need. No muss, no fuss.
 ## Fin
-That's it for today. I hope I was able to demonstrate how simple using AutomatedLab can be. If you want more info, please check out the full AL documentation site at https://automatedlab.org/en/latest/. Then once you've whet your whistle with IaC in PowerShell, start looking into more powerful solutions like Terraform, Ansible, Chef, Puppet, DSC, and so many more! Then teach me what you learn. 😄
+That's it for today. I hope I was able to demonstrate how simple using AutomatedLab can be. If you want more info, please check out the full AL documentation site at [https://automatedlab.org/en/latest/](https://automatedlab.org/en/latest/). Then once you've whet your whistle with IaC in PowerShell, start looking into more powerful solutions like Terraform, Ansible, Chef, Puppet, DSC, and so many more! Then teach me what you learn. 😄
 
 And of course, if you have any comments or suggestions for my v0.0.1 script, please post a comment on the gist or [find me elsewhere](https://jakehildreth.com). I'm around. 😉
