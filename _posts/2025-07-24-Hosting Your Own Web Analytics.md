@@ -10,13 +10,14 @@ Setting up Matomo so I could track my blog views. 😅
 ### RyanReynoldsButWhy.gif
 When I was entering my personal blog articles as "activities" on my Microsoft MVP application in January, it kept asking silly questions like "how many visitors viewed this article?" that I had no idea how to answer. For most of my other reported activities, it was easy to go to YouTube or the Trimarc Hub to check engagement numbers, but my personal blog is on neither YouTube nor the Trimarc Hub. 😭 
 ### Okay, I Guess I'll Do Some Light Tracking...
-While I would've preferred installing one of these bad boys:
+To be clear, I *really* wanted to install one of these bad boys:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724092210.png)
 
-Such trackers never really worked right. The better answer is a modern tracking/analytics solution. The quickest and easiest solution to this problem is Google Analytics. I've used it on a few projects in the past, and it does the job. It's not amazing, but it maintains its market share *somehow* (*\*ahem\** monopoly *\*ahem\**). To avoid Google, I spent a little time researching open-source alternatives. Matomo kept coming up, so I decided to try it out.
+But in the real world, such trackers never really worked right. The better answer is a modern tracking/analytics solution. The quickest and easiest solution to this problem is Google Analytics. I've used it on a few projects in the past, and it does the job. It's not amazing, but it maintains its market share *somehow* (*\*ahem\** monopoly *\*ahem\**). To avoid Google, I spent a little time researching open-source alternatives. Matomo kept coming up, so I decided to try it out.
 ### Enter Matomo
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724090235.png)
-Matomo (originally Piwik) is a web analytics platform that you can self-host. It's small, light, mature, and doesn't require getting any more entangled in the Google ecosystem. I'm already attached enough to Google; I don't need to add another tendril. For the self-hosting averse, Matomo provides a cloud-hosted solution too, but anything more than $0/month is financially infeasible for the amount of traffic my blog gets.
+
+[Matomo](https://matomo.org) (originally Piwik) is a web analytics platform that you can self-host. It's small, light, mature, and doesn't require getting any more entangled in the Google ecosystem. I'm already attached enough to Google; I don't need to add another tendril. For the self-hosting averse, Matomo provides a cloud-hosted solution too, but anything more than $0/month is financially infeasible for the amount of traffic my blog gets.
 
 While I haven't used Matomo much yet, in my testing this morning, it's provided exactly what I want: visibility into how many people are actually interacting with this very blog. It's been neat to see when people are actually viewing the site and the path they take from page to page. 
 
@@ -25,11 +26,13 @@ If you want to learn about your blog's visitor, follow along with me!
 Alright. I'm not even gonna try to play, folks. I didn't do anything fancy for deploying Matomo; I reused an existing resource, and I followed a popular blog! Hashtag influencing, baby.
 #### The Existing Resource: a VM on Oracle Cloud
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724105112.png)
+
 I already had an instance of a VM.Standard.E2.1.Micro machine running Ubuntu 24.04 in Oracle Cloud. This instance was originally deployed as a Mattermost server to host Locksmith internal discussion. Since Locksmith discussion has moved to [Discord](https://discord.dotdot.horse), I shut down the Mattermost server last month. Since then, I've felt bad about using energy to maintain the instance with no real purpose.
 
 Side note: If you are doing a project with small containers, check out Oracle Cloud. Their Always Free tier includes instances that are more than powerful enough to do basic container stuff.
 #### The Popular Blog: How To Install Matomo Web Analytics on Ubuntu 20.04
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724105154.png)
+
 It turns out, Digital Ocean did all the hard work for me. To reveal these ancient truthes, all I had to do was enter the proper incantation into Google. Out popped this article: [How To Install Matomo Web Analytics on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-matomo-web-analytics-on-ubuntu-20-04)
 
 There were some *minor* differences between this article and real life. Probably because it was written over 3 years ago. Let's get into it...
@@ -46,6 +49,7 @@ Other than calling them SSL certificates, I have no complaints with this section
 #### Step 4 - Setting up Matomo
 When you get to [Step 4](https://www.digitalocean.com/community/tutorials/how-to-install-matomo-web-analytics-on-ubuntu-20-04#step-4-setting-up-matomo), you are presented with the following image:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724110443.png)
+
 The image is *mostly* correct, but in more recent versions of Matomo, you get a drop-down box at the bottom that allows you to select the Database Engine used by Matomo. The drop down defaults to MySQL, but the recipe we are following specifies MariaDB. Make sure you select MariaDB before clicking `NEXT >`.
 #### One Last Thing!
 *This is less about the article and more about my personal Matomo deployment...*
@@ -58,6 +62,7 @@ Thankfully, Matomo provides multiple methods for tracking visitors to your site 
 
 ### Ende
 ![]({{ site.baseurl }}/images/Pasted%20image%2020250724113332.png)
+
 This is an actual screenshot from my deployment. It's not super snappy, and I'm still learning how to really use it, but at least I can tell how many folks have looked at my blog today. And I did it without having to use yet another Google service!
 
 If you're interested in setting up analytics for yourself, I hope this article helped you out. As always, if you have any questions or just want to tell me how much I suck, I'm happy to hear from you. Head over to [jakehildreth.com](https://jakehildreth.com) to get contact info!
