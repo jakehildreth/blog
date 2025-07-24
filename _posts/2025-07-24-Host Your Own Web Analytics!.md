@@ -1,5 +1,5 @@
 ---
-title: Deploying Matomo on Oracle Cloud
+title: Host Your Own Web Analytics!
 creation_date: 2025-07-15
 modification_date: 2025-07-24
 ---
