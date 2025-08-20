@@ -96,7 +96,7 @@ Since they won't fix this, I'm releasing this info to the public. I tried, I pro
 
 ## How To Replicate
 ### What is required to reproduce the issue?
-- Two Macs running macOS Sonoma or newer.
+- Two Macs using Apple Silicon and running macOS Sonoma or newer.
 	- Mac 1: used from a remote location to control Mac 2. For example: your work Mac.
 	- Mac 2: controlled from Mac 1. For example: your home Mac.
 - Network connectivity between the Macs.
