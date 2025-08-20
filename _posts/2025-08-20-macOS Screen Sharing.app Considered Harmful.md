@@ -125,7 +125,7 @@ I see a couple possible solutions to this issue immediately, but I'm sure there 
 Unfortunately, I don't have the power to make these changes. And frankly, I find Apple's suggestion to pay a minimum of $80 for seemingly basic functionality rather appalling.
 
 So, until something changes:
-1. Consider macOS Screen Sharing.app harmful.
+1. [Consider macOS Screen Sharing.app harmful.](https://en.wikipedia.org/wiki/Considered_harmful)
 2. Do not use Screen Sharing.app unless you can physically secure your Mac.
 3. Consider other remote access solutions that respect your privacy.
 
