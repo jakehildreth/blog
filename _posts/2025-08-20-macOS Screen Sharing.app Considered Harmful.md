@@ -1,3 +1,8 @@
+---
+title: macOS Screen Sharing.app Considered Harmful
+creation_date: 2025-08-19
+modification_date: 2025-08-20
+---
 ## Babby's First macOS Security Report
 Despite being my daily driver at both work and home, I've never dug too much into macOS security. I very occasionally read stuff from Patrick Wardle, but he's the only macOS security researcher I can name. I have little idea how most of the macOS gooey bits operate, and honestly, I'm fine with it.
 
@@ -88,12 +93,14 @@ I totally understand Apple is in the business of making money, but this seems to
 
 Since they won't fix this, I'm releasing this info to the public. I tried, I promise!
 >To reiterate: following standard responsible disclosure protocol, my concern was initially reported to Apple Security on May 7, 2025, but they deemed it "expected behavior." On May 22, 2025, I informed Apple Security of my intent to disclose this issue publicly.
+
 ## How To Replicate
 ### What is required to reproduce the issue?
 - Two Macs running macOS Sonoma or newer.
 	- Mac 1: used from a remote location to control Mac 2. For example: your work Mac.
 	- Mac 2: controlled from Mac 1. For example: your home Mac.
 - Network connectivity between the Macs.
+
 ### Steps to reproduce
 1. Open Screen Sharing.app on Mac 1.
 2. At the top right of the "All Connections" window, click the + button to start a new Screen Sharing session.
@@ -101,10 +108,13 @@ Since they won't fix this, I'm releasing this info to the public. I tried, I pro
 4. Fill in the "User Name:" and "Password:" with the credentials associated with a user of Mac 2, then click the "Sign In" button.
 5. In the next window, select "High Performance" and click the "Continue" button.
 6. On Mac 2, physically press the Escape key.
+
 ### Expected results
 The Screen Sharing connection on Mac 1 is stopped, and the physical user in front of Mac 2 is forced to authenticate via password/Touch ID/Apple Watch.
+
 ### Actual results
 The Screen Sharing connection on Mac 1 is stopped, and the physical user in front of Mac 2 takes control of the session **without authenticating.**
+
 ## Proposed Solution
 I see a couple possible solutions to this issue immediately, but I'm sure there are other better options:
 1. Force authentication to end a remotely controlled Screen Sharing.app session.
