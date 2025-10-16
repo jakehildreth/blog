@@ -4,18 +4,17 @@ title: speaking
 permalink: /speaking/
 ---
 I like sharing knowledge. I'll be doing so in the following public arenas in the coming months:
-#### Queen City Con
-* November 7, 2025
-* Hyatt Regency
-* Cincinnati, OH
-* [queencitycon.org](https://queencitycon.org)
-* Co-presenting with [John Askew](https://www.linkedin.com/in/sk3w/)
-* Talk Title: Making $ with COMPUTER$
-* Abstract:
+### Queen City Con
+* **When:** November 7, 2025
+* **Where:** Hyatt Regency, Downtown Cincinnati, OH
+* **Site:** [queencitycon.org](https://queencitycon.org)
+* **Talk Title:** Making $ with COMPUTER$
+* **Co-presenter:** [John Askew](https://www.linkedin.com/in/sk3w/)
+* **Abstract:**
 
-When Active Directory (AD) was initially released, the designers thought it would be a good idea to allow any user to add their computer to a domain. 25 years ago, this sort of made sense: computer accounts were difficult to abuse, and users were the focus of security concerns. But in modern environments, if you can create computer accounts in Active Directory, you can probably take over the domain. In many environments, any authenticated user can do just that.
+    When Active Directory (AD) was initially released, the designers thought it would be a good idea to allow any user to add their computer to a domain. 25 years ago, this sort of made sense: computer accounts were difficult to abuse, and users were the focus of security concerns. But in modern environments, if you can create computer accounts in Active Directory, you can probably take over the domain. In many environments, any authenticated user can do just that.
 
-In this talk, we’ll walk through a bunch of ways to abuse that capability: Resource-Based Constrained Delegation attacks, AD CS shenanigans, GPO and ACL abuse, SPN-in-the-middle attacks, weird stuff with Domain Computers, and a few other surprises. We’ll dig into how it works, why it’s possible, and what you can do about it. You’ll leave knowing exactly how attackers turn “net computer /add” into Domain Admin. But more importantly, you'll learn how to properly delegate this dangerous right!
+    In this talk, we’ll walk through a bunch of ways to abuse that capability: Resource-Based Constrained Delegation attacks, AD CS shenanigans, GPO and ACL abuse, SPN-in-the-middle attacks, weird stuff with Domain Computers, and a few other surprises. We’ll dig into how it works, why it’s possible, and what you can do about it. You’ll leave knowing exactly how attackers turn “net computer /add” into Domain Admin. But more importantly, you'll learn how to properly delegate this dangerous right!
 #### Anti-Cast Training
 - November 12, 2025
 - [Anti-Cast](antisyphontraining.com)
