@@ -41,6 +41,23 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
 ### Past Events
 
+#### HIP (Hybrid Identity Protection) Conf
+- **When:** October 7-9, 2025
+- **Where:** The Charleston Place, Charleston, SC
+- **Site:** [hipconf.com](https://hipconf.com)
+- **Talk Title:** End the ESCape Clause!
+- **Abstract:**
+
+    Explore a critical yet often overlooked threat: how seemingly low- or medium-severity AD CS misconfigurations, known as ESCs, can combine to compromise an entire Active Directory forest. This session, based on original research and real-world assessments, demonstrates three distinct ESC chains that escalate typical user access to Domain or Enterprise Admin. Learn why defenders often miss these risks when analyzing AD CS configurations in isolation and discover ESCalator, a PowerShell tool that surfaces escalation paths by linking multiple misconfigurations. Gain actionable insights to detect and mitigate these threats before attackers exploit them.
+
+#### PancakesCon 6
+- **When:** September 21, 2025
+- **Where:** [pancakescon.com](https://pancakescon.com)
+- **Talk Title:** PKI and Powerlifting!
+- **Abstract:**
+
+    In this talk, I will provide an no-math primer on basic PKI terms. We'll start with simple concepts like symmetric encryption and shared keys all the way up to asymmetric encryption, hashing, signing, certificates, until we end up with discussion about Public Key Infrastructure. Much like each PKI term builds on the previous terms, I'll also dicusss how you can get started in Powerlifting and build your strength!
+
 #### Blue Team Con
 - **When:** September 6-7, 2025
 - **Where:** Fairmont Chicago, Millenium Park, Chicago, IL
@@ -58,20 +75,3 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
     In this session we explore the design of an Entra tenant that has one sole purpose – protecting Tier 0 resources in Active Directory. Sound wild? We think so. But if we break ALL the rules along the way, we might end up in a place where our attack surface is reduced, our AD authentication methods are strong, and Entra might become the go to replacement for ESAE.
 
     Join us as we explore the architecture and what it takes to roll out the red tenant for all your AD Admins!
-
-#### PancakesCon 6
-- **When:** September 21, 2025
-- **Where:** [pancakescon.com](https://pancakescon.com)
-- **Talk Title:** PKI and Powerlifting!
-- **Abstract:**
-
-    In this talk, I will provide an no-math primer on basic PKI terms. We'll start with simple concepts like symmetric encryption and shared keys all the way up to asymmetric encryption, hashing, signing, certificates, until we end up with discussion about Public Key Infrastructure. Much like each PKI term builds on the previous terms, I'll also dicusss how you can get started in Powerlifting and build your strength!
-
-#### HIP (Hybrid Identity Protection) Conf
-- **When:** October 7-9, 2025
-- **Where:** The Charleston Place, Charleston, SC
-- **Site:** [hipconf.com](https://hipconf.com)
-- **Talk Title:** End the ESCape Clause!
-- **Abstract:**
-
-    Explore a critical yet often overlooked threat: how seemingly low- or medium-severity AD CS misconfigurations, known as ESCs, can combine to compromise an entire Active Directory forest. This session, based on original research and real-world assessments, demonstrates three distinct ESC chains that escalate typical user access to Domain or Enterprise Admin. Learn why defenders often miss these risks when analyzing AD CS configurations in isolation and discover ESCalator, a PowerShell tool that surfaces escalation paths by linking multiple misconfigurations. Gain actionable insights to detect and mitigate these threats before attackers exploit them.
