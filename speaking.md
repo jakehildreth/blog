@@ -12,6 +12,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * Co-presenting with [John Askew](https://www.linkedin.com/in/sk3w/)
 * Talk Title: Making $ with COMPUTER$
 * Abstract:
+
 When Active Directory (AD) was initially released, the designers thought it would be a good idea to allow any user to add their computer to a domain. 25 years ago, this sort of made sense: computer accounts were difficult to abuse, and users were the focus of security concerns. But in modern environments, if you can create computer accounts in Active Directory, you can probably take over the domain. In many environments, any authenticated user can do just that.
 
 In this talk, we’ll walk through a bunch of ways to abuse that capability: Resource-Based Constrained Delegation attacks, AD CS shenanigans, GPO and ACL abuse, SPN-in-the-middle attacks, weird stuff with Domain Computers, and a few other surprises. We’ll dig into how it works, why it’s possible, and what you can do about it. You’ll leave knowing exactly how attackers turn “net computer /add” into Domain Admin. But more importantly, you'll learn how to properly delegate this dangerous right!
@@ -20,17 +21,22 @@ In this talk, we’ll walk through a bunch of ways to abuse that capability: Res
 - [Anti-Cast](antisyphontraining.com)
 - Talk Title: PKI Foundations for Security Pros w/ Jake Hildreth
 - Abstract:
-When Active Directory (AD) was initially released, the designers thought it would be a good idea to allow any user to add their computer to a domain. 25 years ago, this sort of made sense: computer accounts were difficult to abuse, and users were the focus of security concerns. But in modern environments, if you can create computer accounts in Active Directory, you can probably take over the domain. In many environments, any authenticated user can do just that.  
 
-In this talk, we’ll walk through a bunch of ways to abuse that capability: Resource-Based Constrained Delegation attacks, AD CS shenanigans, GPO and ACL abuse, SPN-in-the-middle attacks, weird stuff with Domain Computers, and a few other surprises. We’ll dig into how it works, why it’s possible, and what you can do about it. You’ll leave knowing exactly how attackers turn “net computer /add” into Domain Admin. But more importantly, you'll learn how to properly delegate this dangerous right!
+Do terms like hashing, signing, and certificates feel more confusing than clear?
+
+Public Key Infrastructure (PKI) has a reputation for being complicated, but it doesn’t have to be.
+
+Join us for a free one-hour training session with Jake Hildreth, Principal Security Consultant, on PKI Foundations for Security Professionals.
+
+He’ll teach core cryptography step by step—from symmetric encryption and shared keys to asymmetric encryption, hashing, signing, and certificates—then connect it all in a working PKI.
 #### CodeMash
 * January 13-16, 2025
 * Kalahari Resort
 * Sandusky, OH
 * [codemash.org](https://codemash.org)
+* Talk Title: PKI Unlocked: A No-Math Primer for Builders
 
 Public Key Infrastructure (PKI) has a reputation for being complicated, but it doesn’t have to be. In this talk, we'll walk together through core cryptography concepts step by step. We’ll start with symmetric encryption and shared keys, then move into asymmetric encryption, hashing, signing, and certificates. From there, we’ll connect the pieces and show how they come together in an actual PKI. Each concept builds on the last to you a clear, practical understanding of how PKI works and how to spot its components in the wild. No math, no crypto proofs, just the essentials developers need.
-
 ### Past Events
 #### Blue Team Con
 - September 6-7, 2025
