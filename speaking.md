@@ -6,13 +6,29 @@ permalink: /speaking/
 I like sharing knowledge. I'll be doing so in the following public arenas in the coming months:
 
 #### CodeMash
-* **When:** January 13-16, 2025
+* **When:** January 13-16, 2026. My talk is *currently* at 2:45p ET on January 15.
 * **Where:** Kalahari Resort, Sandusky, OH
 * **Site:** [codemash.org](https://codemash.org)
 * **Talk Title:** PKI Unlocked: A No-Math Primer for Builders
 * **Abstract:**
 
     Public Key Infrastructure (PKI) has a reputation for being complicated, but it doesn’t have to be. In this talk, we'll walk together through core cryptography concepts step by step. We’ll start with symmetric encryption and shared keys, then move into asymmetric encryption, hashing, signing, and certificates. From there, we’ll connect the pieces and show how they come together in an actual PKI. Each concept builds on the last to you a clear, practical understanding of how PKI works and how to spot its components in the wild. No math, no crypto proofs, just the essentials developers need.
+
+#### PowerShell Wednesday
+* **When:** January 21, 2026 @ 1:30p ET.
+* **Where:** [www.youtube.com/@pdq/streams](https://www.youtube.com/@pdq/streams)
+* **Talk Title:** From One-Liners to (Almost) Full-Fledged Applications
+* **Abstract:**
+
+    In this talk, I'll trace the evolution of Locksmith from a few lines of demo code written for my first conference talk in 2022 to a full-fledged open-source tool. We'll walk through the original proof-of-concept snippets, the messy single-script version that followed, the refactoring into a proper PowerShell module, and how community feature requests and pull requests shaped the project in unexpected ways. I'll wrap up with a live demo of Locksmith 2 and share practical lessons about code architecture, open-source maintenance, and the reality of evolving a side project into something people actually use.
+
+#### Thursday Defensive
+* **When:** February 5, 2026 @ 1:30p ET.
+* **Where:** [www.thursdef.com](https://www.thursdef.com)
+* **Talk Title:** AD CS and Locksmith 2!
+* **Abstract:** 
+
+    I'm going to talk about the AD CS security landscape and give a quick demo of what I've built with Locksmith 2. (More to come.)
 
 ### Past Events
 
