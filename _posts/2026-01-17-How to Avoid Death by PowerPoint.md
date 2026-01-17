@@ -20,7 +20,7 @@ The most important information was always highlighted.
 
 It was glorious and reminded me of a fantastic YouTube video shared with me by my co-worker [Robin Granberg](https://www.linkedin.com/in/robin-granberg/). I watched this about 6 months ago, and it *immediately* changed the way I create slides.
 
-You should watch it too: https://www.youtube.com/watch?v=Iwpi1Lm6dFo
+You should watch it too: [https://www.youtube.com/watch?v=Iwpi1Lm6dFo](https://www.youtube.com/watch?v=Iwpi1Lm6dFo)
 
 To summarize: 
 1. One message per slide.
@@ -35,6 +35,6 @@ Speaking of slides, I am making a new PowerShell module for doing presentations 
 
 ![Deck logo. Pixelated word 'Deck' with a stylized deck pattern.]({{ site.baseurl }}/images/Deck.png)
 
-It's called Deck, and you can grab it here: https://github.com/jakehildreth/Deck or install it from the PowerShell Gallery by doing `Install-PSResource Deck`.
+It's called Deck, and you can grab it here: [https://github.com/jakehildreth/Deck](https://github.com/jakehildreth/Deck) or install it from the PowerShell Gallery by doing `Install-PSResource Deck`.
 
 Try it out and let me know what you think.
