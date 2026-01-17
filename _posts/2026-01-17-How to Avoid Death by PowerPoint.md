@@ -33,7 +33,7 @@ Please note: it's *very hard* to do this well, especially when just starting you
 
 Speaking of slides, I am making a new PowerShell module for doing presentations FROM A POWERSHELL TERMINAL!
 
-![Deck logo. Pixelated word 'Deck' with a stylized deck pattern.](images/Deck.png)
+![Deck logo. Pixelated word 'Deck' with a stylized deck pattern.]({{ site.baseurl }}/images/Deck.png)
 
 It's called Deck, and you can grab it here: https://github.com/jakehildreth/Deck or install it from the PowerShell Gallery by doing `Install-PSResource Deck`.
 
