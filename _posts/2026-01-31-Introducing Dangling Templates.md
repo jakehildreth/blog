@@ -1,7 +1,7 @@
 ---
 title: A Tiny Privilege Escalation by Abusing Dangling Templates
 creation_date: 2026-01-8
-modification_date: 2026-01-17
+modification_date: 2026-01-31
 ---
 Hello, friends!
 
