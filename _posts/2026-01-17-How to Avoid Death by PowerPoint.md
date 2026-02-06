@@ -37,7 +37,6 @@ Speaking of slides, I am making a new PowerShell module for doing presentations 
 
 It's called Deck, and you can grab it here: [https://github.com/jakehildreth/Deck](https://github.com/jakehildreth/Deck) or install it from the PowerShell Gallery by doing `Install-PSResource Deck`.
 
-How about a quick demo?
-![](images/DeckDemo.mov)
+How about a quick demo? [https://youtu.be/vS94R6TYz4c](https://youtu.be/vS94R6TYz4c)
 
 Try it out and let me know what you think.
