@@ -1,7 +1,7 @@
 ---
 title: Using Crescendo to Tame certutil.exe
 creation_date: 2025-05-10
-modification_date: 2025-05-26
+modified_date: 2025-05-26
 ---
 ![]({{ site.baseurl }}/images/gold-lights-shining-illustration-vector.jpg)In the beginning of Active Directory Certificate Services (AD CS), there was `certutil.exe`, and it was good... enough.
 

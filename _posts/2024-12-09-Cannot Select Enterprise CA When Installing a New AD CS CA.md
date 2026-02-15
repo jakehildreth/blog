@@ -1,7 +1,7 @@
 ---
 title: Cannot Select "Enterprise CA" When Installing a New AD CS CA
 creation_date: December 9, 2024
-modification_date: December 9, 2024
+modified_date: December 9, 2024
 ---
 I am in the midst of deploying Active Directory Certificate Services (AD CS) Certification Authority (CA) for a presentation I'm giving in 40 hours. (Hello, demo gods! We're still friends, right?)
 

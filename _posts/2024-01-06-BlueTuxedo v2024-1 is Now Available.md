@@ -1,7 +1,7 @@
 ---
 title: BlueTuxedo v2024.1 is Now Available
 creation_date: January 6, 2024
-modification_date: January 6, 2024
+modified_date: January 6, 2024
 ---
 # New Year, New Release!
 BlueTuxedo is now at a place where it can start getting "official releases" - whatever that means for a tool worked on during spare time with no real commitment! Expect a release more-or-less monthly unless life happens.

@@ -1,7 +1,7 @@
 ---
 title: LLMs Aren’t There Yet
 creation_date: February 3, 2024
-modification_date: February 3, 2024
+modified_date: February 3, 2024
 ---
 I just spent way too many hours installing local LLMs and asking them to write a super basic function:
 

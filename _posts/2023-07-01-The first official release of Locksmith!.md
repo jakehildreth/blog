@@ -1,7 +1,7 @@
 ---
 title: The first official release of Locksmith!
 creation_date: July 1, 2023
-modification_date: July 1, 2023
+modified_date: July 1, 2023
 ---
 The Locksmith core team (**@SamErde**, **@techspence**, **@TrimarcJake**) has settled on a monthly release cadence. New releases should come out during the first weekend of every month and will include any work performed during the preceding month. If you have any feature requests, please raise an Issue! At this point, we are accepting almost every request, no matter how wild!
 

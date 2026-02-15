@@ -1,7 +1,7 @@
 ---
 title: Using the Clipboard in PowerShell
 creation_date: May 2, 2024
-modification_date: May 2, 2024
+modified_date: May 2, 2024
 ---
 If you’re using PowerShell 7.4 in Windows Terminal (or any terminal application that supports the OSC52 ANSI escape sequence), the Set-Clipboard cmdlet does support piping remote output to the local clipboard via the -AsOSC52 parameter. 
 

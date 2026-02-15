@@ -1,7 +1,7 @@
 ---
 title: Creating a Release Schedule
 creation_date: June 24, 2023
-modification_date: June 24, 2023
+modified_date: June 24, 2023
 ---
 I've been working most of the morning on a release schedule for [Locksmith](https://github.com/TrimarcJake/Locksmith) and [BlueTuxedo](https://github.com/TrimarcJake/BlueTuxedo) (still private!) that suits the teams working on each. 
 

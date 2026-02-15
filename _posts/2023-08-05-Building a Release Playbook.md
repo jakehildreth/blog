@@ -1,7 +1,7 @@
 ---
 title: Building a Release Playbook
 creation_date: August 5, 2023
-modification_date: August 5, 2023
+modified_date: August 5, 2023
 ---
 1. Do good code
 2. Test code

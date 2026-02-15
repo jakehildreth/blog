@@ -1,7 +1,7 @@
 ---
 title: A Function… in an Object?
 creation_date: February 22, 2024
-modification_date: February 22, 2024
+modified_date: February 22, 2024
 ---
 h/t https://twitter.com/jimsycurity
 

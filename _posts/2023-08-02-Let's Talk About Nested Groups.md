@@ -1,7 +1,7 @@
 ---
 title: Let's Talk About Nested Groups
 creation_date: August 2, 2023
-modification_date: August 13, 2023
+modified_date: August 13, 2023
 ---
 Today, I sat in on a report review for a small-ish environment. The customer had a couple thousand users, some domain controllers, some GPOs, etc. And like almost every customer I've interacted with in the last 2 years of employment with Trimarc, they had a couple Critical issues.
 

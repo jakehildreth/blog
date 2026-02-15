@@ -1,7 +1,7 @@
 ---
 title: Locksmith Lab Setup
 creation_date: June 28, 2023
-modification_date: July 8, 2023
+modified_date: July 8, 2023
 ---
 There’s been a lot of talk around my office recently about home labs. I think it’s time to share the details of the lab I use while writing and reviewing Locksmith code.
 

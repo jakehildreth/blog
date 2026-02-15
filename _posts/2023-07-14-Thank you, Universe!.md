@@ -1,7 +1,7 @@
 ---
 title: Thank you, Universe!
 creation_date: July 14, 2023
-modification_date: July 14, 2023
+modified_date: July 14, 2023
 ---
 Yesterday, I brought my earbuds with me to a bunch of appointments in case I wanted to listen to a thing or two while I was waiting.
  

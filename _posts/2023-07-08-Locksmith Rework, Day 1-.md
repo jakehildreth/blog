@@ -1,7 +1,7 @@
 ---
 title: Locksmith Rework, Day 1
 creation_date: July 8, 2023
-modification_date: July 12, 2023
+modified_date: July 12, 2023
 ---
 It's 6:16am on a Saturday, so obviously it's time to work on code. 
 
