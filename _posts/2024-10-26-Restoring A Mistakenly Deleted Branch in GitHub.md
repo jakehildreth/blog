@@ -1,7 +1,7 @@
 ---
 title: Restoring a Mistakenly-Deleted Branch in GitHub
 creation_date: October 26, 2024
-modified_date: October 26, 2024
+modified_date: 2026-02-15
 ---
 ## Back Story
 

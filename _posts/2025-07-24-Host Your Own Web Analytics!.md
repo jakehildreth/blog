@@ -1,7 +1,7 @@
 ---
 title: Host Your Own Web Analytics!
 creation_date: 2025-07-15
-modified_date: 2025-07-24
+modified_date: 2026-02-15
 ---
 ### Thing I told myself I'd never care about:
 My blog views.

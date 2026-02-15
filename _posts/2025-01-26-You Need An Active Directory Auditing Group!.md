@@ -1,7 +1,7 @@
 ---
 title: You Need An Active Directory Auditing Group!
 creation_date: October 9, 2024
-modified_date: January 26, 2025
+modified_date: 2026-02-15
 ---
 In my work as the Service Lead for the Trimarc Active Directory Security Assessment (ADSA), I personally assess 6-10 AD forests per year and perform Subject Matter Expert review/QA on *so many* more. (Folks... I've seen some *stuff*.) Every assessment contains the same four phases: **c**ollection, **p**rocessing, **a**nalysis, and **p**resentation.
 

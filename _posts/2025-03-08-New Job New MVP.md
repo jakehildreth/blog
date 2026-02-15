@@ -1,6 +1,7 @@
 ---
 title: New Job! New MVP?
 creation_date: 2025-03-08
+modified_date: 2025-03-08
 ---
 Hi.
 

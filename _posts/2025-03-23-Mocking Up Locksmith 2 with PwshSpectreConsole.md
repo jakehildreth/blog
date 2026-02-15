@@ -1,7 +1,7 @@
 ---
 title: Mocking Up Locksmith 2 with PwshSpectreConsole
 creation_date: 2025-03-22
-modified_date: 2025-03-23
+modified_date: 2026-02-15
 ---
 ## Feeling Good Again!
 

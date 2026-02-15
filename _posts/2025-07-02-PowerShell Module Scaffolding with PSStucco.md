@@ -1,6 +1,6 @@
 ---
 creation_date: 2025-06-20
-modified_date: 2025-07-02
+modified_date: 2026-02-15
 title: PowerShell Module Scaffolding with PSStucco
 ---
 *Note: this article is a remix. In 2023, Gilbert Sanchez wrote [this article](https://gilbertsanchez.com/posts/stucco-create-powershell-module/) about using [Stucco](https://github.com/devblackops/Stucco) to quickly scaffold new PowerShell modules. Unfortunately, Stucco is no longer actively maintained. This article will instead talk about using [PSStucco](https://github.com/jimbrig/PSStucco) - a more active project forked from Stucco.*

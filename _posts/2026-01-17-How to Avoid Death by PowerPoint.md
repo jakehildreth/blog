@@ -1,9 +1,8 @@
 ---
 title: Avoid Death by PowerPoint
 creation_date: 2025-09-09
-modified_date: 2026-01-17
+modified_date: 2026-02-15
 ---
-
 Hello, friends!
 
 I spent this week at [CodeMash](https://www.codemash.org). It's the kind of con I love: close to my house 🤣.

@@ -1,7 +1,7 @@
 ---
 title: A Dive into AutomatedLab - Infrastructure as Code for PowerShellers
 creation_date: 2025-05-16
-modified_date: 2025-07-05
+modified_date: 2026-02-15
 ---
 ![AutomatedLab Logo]({{ site.baseurl }}/images/Pasted%20image%2020250704101624.png)
 

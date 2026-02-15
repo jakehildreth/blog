@@ -1,7 +1,7 @@
 ---
 title: Note to Self About System.DirectoryServices.ActiveDirectoryAccessRule
 creation_date: July 29, 2023
-modified_date: July 29, 2023
+modified_date: 2026-02-15
 ---
 HEY DUMMY, YOU HAVE TO USE THE PROPER TYPES FOR ALL THE ARGUMENTS.
 

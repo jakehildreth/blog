@@ -1,7 +1,7 @@
 ---
 title: Out-ConsoleGridView
 creation_date: August 2, 2023
-modified_date: August 3, 2023
+modified_date: 2026-02-15
 ---
 WHY DID NO ONE TELL ME ABOUT THIS?!
 

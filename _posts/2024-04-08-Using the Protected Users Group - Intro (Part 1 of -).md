@@ -1,7 +1,7 @@
 ---
 title: Using the Protected Users Group - Intro (Part 1 of ?)
 creation_date: April 8, 2024
-modified_date: April 22, 2024
+modified_date: 2026-02-15
 ---
 The Protected Users group (PUG) is a universal group added to Active Directory in Windows Server 2012 R2. It enables and enforces a series of **non-configurable** protections that greatly enhance the security of members of the group:
 

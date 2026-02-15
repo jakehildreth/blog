@@ -1,7 +1,7 @@
 ---
 title: What Happens When a Real Developer Takes an Interest in Your Open…
 creation_date: July 4, 2023
-modified_date: July 6, 2023
+modified_date: 2026-02-15
 ---
 ![2023-07-04-What Happens When a Real Developer Takes an Interest in Your Open…]({{ site.baseurl }}/images/2023-07-04-What%20Happens%20When%20a%20Real%20Developer%20Takes%20an%20Interest%20in%20Your%20Open….png)
 
