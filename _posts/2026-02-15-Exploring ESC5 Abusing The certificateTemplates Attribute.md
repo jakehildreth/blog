@@ -59,6 +59,7 @@ Specifically, to modify the `certificateTemplates` property, the pentest firm ga
 - WriteDacl
 - WriteProperty on All Properties
 - WriteProperty on `certificateTemplates`
+
 ## What Did You Do Wrong?
 Nothing. AD CS is a baroque monstrosity of interconnected pieces with unexpected impact on each other. Owing to its multi-dimensional nature, remediation guidance for many AD CS issues is poor because there are often multiple methods to fix individual issues. The best remediation method for any single issue will be highly dependent on your specific configuration and certificate usage.
 
@@ -77,6 +78,7 @@ In addition, the unprotected `certificateTemplates` needs to be addressed. In th
 2. Inspect each ACE in the DACL and remove any ACE that grants a dangerous permission to any principal that is neither an AD or AD CS Admin.
 3. Repeat Steps 1 & 2 for all ACEs on all `pKIEnrollmentService` objects in the `CN=Enrollment Services` container.
 If you discover a principal that *needs* dangerous rights on a CA object for whatever reason, you've identified a new Tier 0 object! t accordingly!
+
 ## This Seems Hard
 You're not wrong. Securing AD CS is hard because securing AD is hard and anything with the word "certificate" in the name is scary.
 
