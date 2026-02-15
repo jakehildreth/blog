@@ -39,5 +39,3 @@ It's called Deck, and you can grab it here: [https://github.com/jakehildreth/Dec
 How about a quick demo? [https://youtu.be/vS94R6TYz4c](https://youtu.be/vS94R6TYz4c)
 
 Try it out and let me know what you think.
-
-I am updating this article to test a GitHub Action, a third time.
