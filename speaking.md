@@ -5,6 +5,35 @@ permalink: /speaking/
 ---
 I like sharing knowledge. I'll be doing so in the following public arenas in the coming months:
 
+### Upcoming Events
+
+#### PNWPSUG
+* **When:** March 11, 2026 @ 9p ET
+* **Where:** [https://www.meetup.com/pacific-powershell-user-group/](https://www.meetup.com/pacific-powershell-user-group/)
+* **Talk Title:** Unsure at the moment!
+* **Abstract:** TBD
+
+#### PSConfEU
+* **When:** June 1-4, 2026
+* **Where:** Wiesbaden, Hesse, Germany
+* **Site:** [psconf.eu](https://psconf.eu)
+* **Talk #1 Title:** Securing PowerShell from the Ground Up 
+* **Talk #1 Co-presenter:** [Andrew Pla](https://www.linkedin.com/in/andrewplatech/)
+* **Talk #1 Abstract:**
+
+    PowerShell shows up in a lot of security conversations. Sometimes as a powerful admin tool. Sometimes as something attackers abuse. And sometimes as the thing someone wants to disable entirely. In this talk, we’ll take a step back and look at how PowerShell actually fits into modern Windows environments. We’ll walk through common abuse patterns and the security features and tools you should know about, what they really do, and where they can help. You should leave this talk feeling confident and empowered about the landscape around securing PowerShell.
+
+* **Talk #2 Title:** Watch Your Step! Building Long-Running Scripts That Don't Trip Over Themselves
+* **Talk #2 Abstract:** 
+    We've all been there. It's 11pm, you're running a 45-minute deployment script, and it fails at step 37 of 42. Cool. Cool cool cool. Now you get to start over. Or worse, you're not sure where it failed, so you spend 20 minutes poking around before you dare re-run anything.
+    Long-running automation is fragile. Networks drop. Systems reboot. Someone presses Ctrl+C. Your toddler walks in and demands breakfast. Reality happens.
+    I got tired of this, so I built Stepper: a small PowerShell module that lets you break scripts into discrete steps that automatically save their progress. When something goes wrong (or life happens), just run it again. It picks up where it left off.
+    It's basically a really simple PowerShell Workflow that actually works in PS7+!
+    In this session, I'll show you how to structure scripts as resumable steps, persist state across interruptions, and build configuration-driven automation that doesn't make you want to mass-delete your repo. We'll live-code an example, kill it mid-run on purpose, and watch it recover like nothing happened.
+    You don't have to use Stepper to get something out of this talk. The patterns apply whether you're using my module or rolling your own. If you build deployments, migrations, health checks, or any multi-step automation, you'll leave with ideas you can use immediately. Stop restarting from scratch and start building scripts that remember where they were.
+
+### Past Events
+
 #### Thursday Defensive
 * **When:** February 5, 2026 @ 1:30p ET.
 * **Where:** [www.thursdef.com](https://www.thursdef.com)
@@ -12,8 +41,6 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Abstract:** 
 
     I'm going to talk about the AD CS security landscape and give a quick demo of what I've built with Locksmith 2. (More to come.)
-
-### Past Events
 
 #### PowerShell Wednesday
 * **When:** January 21, 2026 @ 1:30p ET.
