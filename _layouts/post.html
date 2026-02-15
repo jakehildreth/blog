@@ -20,7 +20,12 @@ layout: base
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+      {%- assign words = content | number_of_words -%}
+      {%- assign mins = words | divided_by: 200 -%}
+      {%- if mins < 1 %}{% assign mins = 1 %}{% endif -%}
+        • <span class="reading-time">{{ mins }} min read</span>
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
