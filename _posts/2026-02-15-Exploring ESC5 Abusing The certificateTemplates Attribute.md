@@ -67,7 +67,7 @@ In the case described above, disabling the template was a good first step! Disab
 
 ## What Could You Have Done Better?
 To further reduce or even remove the risk presented by the dangerous ESC1 template, one or more of the following steps needed to be taken:
-1. If no one screams for a month or two after disabling the template... **DELETE IT.** A template that does not exist cannot be enabled and cannot be used for enrollment. However, if someone does scream...
+1. If no one screams for a month or two after disabling the template, document the template's configuration[^1] then **DELETE IT.** A template that does not exist cannot be enabled and cannot be used for enrollment. However, if someone does scream...
 2. Remove the ability to supply a SAN during enrollment. There are very few situations where a Client Authentication certificate needs a SAN.
 3. Remove unnecessary Extended Key Usages (EKUs) from the template. SANs are typically only required for certificates used for Server Authentication (aka HTTPS/TLS certs.) Adding one or more Client Authentication EKUs to a Server Auth cert is a footgun waiting to maim you.
 4. Remove enrollment rights from all low-privileged principals. At the very least, *tightly scope* who can enroll in the template. The fewer principals that can request a dangerous certificate, the smaller the attack surface.
@@ -80,7 +80,7 @@ In addition, the unprotected `certificateTemplates` needs to be addressed. In th
 If you discover a principal that *needs* dangerous rights on a CA object for whatever reason, you've identified a new Tier 0 object! t accordingly!
 
 ## This Seems Hard
-You're not wrong. Securing AD CS is hard because securing AD is hard and anything with the word "certificate" in the name is scary.
+You're not wrong. Securing AD is hard, so securing AD CA is extra hard because anything with the word "certificate" in the name is scary.
 
 Fortunately, you don't have to do all this manually. Instead, you can run [Locksmith](https://github.com/jakehildreth/Locksmith). Locksmith was designed to give you what you need to tighten up your AD CS environment as quickly as possible by providing per-issue risk ratings and remediation guidance. Here's the way to do it:
 ```powershell
@@ -133,3 +133,5 @@ The key takeaways:
 AD CS security is a multi-layered problem, and fixing one layer while leaving another exposed just kicks the can down the road. Take the time to address each layer, and you'll get to keep your pony.
 
 Thanks for reading, friends! 💙
+
+[^1]: A template configuration backup and restore tool is in the works. Thanks for the recommendation, [Jim](https://adminsdholder.com)!
