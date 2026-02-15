@@ -1,0 +1,529 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Override minima variables before importing
+$content-width:    960px;
+$on-laptop:        960px;
+$on-palm:          600px;
+
+$text-color:       #2d2d2d;
+$background-color: #fdfdfd;
+$brand-color:      #1a6dd4;
+$grey-color:       #6b7280;
+$grey-color-light: #e5e7eb;
+$grey-color-dark:  #374151;
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+$base-font-size:   17px;
+$base-line-height: 1.7;
+
+@import "minima";
+
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.post-content {
+  h2 {
+    margin-top: 2.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid $grey-color-light;
+  }
+
+  h3 {
+    margin-top: 2em;
+  }
+
+  p {
+    margin-bottom: 1.3em;
+  }
+}
+
+// ============================================================
+// CODE BLOCKS
+// ============================================================
+
+pre,
+code {
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", Menlo, Monaco, Consolas, monospace;
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  color: #d63384;
+}
+
+pre {
+  padding: 16px;
+  overflow-x: auto;
+  line-height: 1.5;
+  border-radius: 8px;
+
+  > code {
+    border: 0;
+    padding: 0;
+    font-size: 87.5%;
+    color: inherit;
+    background: none;
+  }
+}
+
+.highlight {
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+// ============================================================
+// IMAGES
+// ============================================================
+
+.post-content {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  // Kramdown-assigned class: use {: .half} in posts
+  img.half {
+    max-width: 50%;
+  }
+
+  // Kramdown-assigned class: use {: .small} in posts
+  img.small {
+    max-width: 300px;
+  }
+}
+
+// ============================================================
+// BLOCKQUOTES
+// ============================================================
+
+blockquote {
+  border-left: 4px solid $brand-color;
+  background: #f0f6ff;
+  padding: 1em 1.5em;
+  border-radius: 0 8px 8px 0;
+  color: #374151;
+  font-style: normal;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+// ============================================================
+// TABLES
+// ============================================================
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e1e4e8;
+
+  th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+    border-bottom: 2px solid #d1d5db;
+  }
+
+  td {
+    border-color: #e5e7eb;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+}
+
+// ============================================================
+// HEADER
+// ============================================================
+
+.site-header {
+  border-top: 4px solid $brand-color;
+  border-bottom: 1px solid $grey-color-light;
+  background: #fff;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  &,
+  &:visited {
+    color: #1a1a2e;
+  }
+}
+
+.page-link {
+  font-weight: 500;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+// ============================================================
+// FOOTER
+// ============================================================
+
+.site-footer {
+  background: #f9fafb;
+  border-top: 1px solid $grey-color-light;
+}
+
+// ============================================================
+// HOME PAGE POST LIST
+// ============================================================
+
+.post-list {
+  > li {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid $grey-color-light;
+    margin-bottom: 1.5em;
+  }
+}
+
+.post-link {
+  font-weight: 600;
+  color: #1a1a2e;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+.post-meta {
+  font-size: 0.85em;
+  color: $grey-color;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// ============================================================
+// POST LAYOUT
+// ============================================================
+
+.post-header {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.post-title {
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+// Reading time indicator (added via Liquid)
+.reading-time {
+  font-size: 0.85em;
+  color: $grey-color;
+  margin-left: 0.5em;
+}
+
+// ============================================================
+// TABLE OF CONTENTS (generated via {:toc})
+// ============================================================
+
+.post-content {
+  > ul#markdown-toc,
+  > ol#markdown-toc {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 1.25em 1.25em 1.25em 2.5em;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+
+    &::before {
+      content: "On this page";
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      margin-left: -1.25em;
+      color: #1a1a2e;
+    }
+
+    li {
+      margin-bottom: 0.3em;
+    }
+
+    a {
+      color: $brand-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Sticky TOC for wide screens
+@media screen and (min-width: 1200px) {
+  .post-content {
+    position: relative;
+
+    > ul#markdown-toc,
+    > ol#markdown-toc {
+      position: sticky;
+      top: 2em;
+      float: right;
+      width: 220px;
+      margin-left: 2em;
+      margin-right: -260px;
+      font-size: 0.82em;
+    }
+  }
+}
+
+// ============================================================
+// LINKS
+// ============================================================
+
+a {
+  transition: color 0.15s ease;
+}
+
+.post-content a {
+  color: $brand-color;
+  text-decoration: underline;
+  text-decoration-color: rgba($brand-color, 0.3);
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: $brand-color;
+  }
+}
+
+// ============================================================
+// FOOTNOTES
+// ============================================================
+
+.footnotes {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid $grey-color-light;
+  font-size: 0.9em;
+  color: $grey-color-dark;
+}
+
+// ============================================================
+// YEAR GROUPING (home page)
+// ============================================================
+
+.year-heading {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: $grey-color-dark;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid $brand-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// ============================================================
+// DARK MODE
+// ============================================================
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #d1d5db;
+    background-color: #111827;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .site-title,
+  .site-title:visited,
+  .post-title,
+  .post-link,
+  .year-heading {
+    color: #f3f4f6;
+  }
+
+  a {
+    color: #60a5fa;
+
+    &:visited {
+      color: #93bbfc;
+    }
+  }
+
+  .post-content a {
+    color: #60a5fa;
+    text-decoration-color: rgba(96, 165, 250, 0.3);
+
+    &:hover {
+      text-decoration-color: #60a5fa;
+    }
+  }
+
+  .site-header {
+    background: #1f2937;
+    border-bottom-color: #374151;
+    border-top-color: #60a5fa;
+  }
+
+  .page-link {
+    color: #d1d5db;
+
+    &:hover {
+      color: #60a5fa;
+    }
+  }
+
+  .site-footer {
+    background: #1f2937;
+    border-top-color: #374151;
+  }
+
+  .footer-col-wrapper {
+    color: #9ca3af;
+  }
+
+  pre,
+  code {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  code {
+    color: #f472b6;
+  }
+
+  pre > code {
+    color: #d1d5db;
+  }
+
+  .highlight {
+    background: #1e293b;
+  }
+
+  // Dark syntax highlighting overrides
+  .highlight {
+    .c, .cm, .c1, .cs { color: #6b7280; }
+    .k, .kd, .kp, .kr, .kc { color: #c084fc; }
+    .kt { color: #67e8f9; }
+    .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss { color: #86efac; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #fbbf24; }
+    .na { color: #67e8f9; }
+    .nb { color: #60a5fa; }
+    .nc { color: #67e8f9; font-weight: bold; }
+    .no, .nv, .vc, .vg, .vi { color: #f87171; }
+    .nf, .ne { color: #34d399; font-weight: bold; }
+    .nn { color: #d1d5db; }
+    .nt { color: #f472b6; }
+    .o, .ow { color: #d1d5db; font-weight: bold; }
+    .gd { color: #fca5a5; background-color: rgba(239, 68, 68, 0.15); }
+    .gi { color: #86efac; background-color: rgba(34, 197, 94, 0.15); }
+    .err { color: #f87171; background: none; }
+    .gp { color: #9ca3af; }
+    .go { color: #9ca3af; }
+    .bp { color: #9ca3af; }
+    .w { color: #4b5563; }
+  }
+
+  blockquote {
+    background: #1e293b;
+    border-left-color: #60a5fa;
+    color: #d1d5db;
+  }
+
+  table {
+    color: #d1d5db;
+    border-color: #374151;
+
+    th {
+      background-color: #1e293b;
+      border-color: #374151;
+      border-bottom-color: #4b5563;
+    }
+
+    td {
+      border-color: #374151;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(31, 41, 55, 0.5);
+    }
+  }
+
+  .post-content img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .post-header {
+    border-bottom-color: #374151;
+  }
+
+  .post-content h2 {
+    border-bottom-color: #374151;
+  }
+
+  .post-list > li {
+    border-bottom-color: #374151;
+  }
+
+  .post-meta,
+  .reading-time {
+    color: #9ca3af;
+  }
+
+  .year-heading {
+    color: #e5e7eb;
+    border-bottom-color: #60a5fa;
+  }
+
+  .post-content {
+    > ul#markdown-toc,
+    > ol#markdown-toc {
+      background: #1e293b;
+      border-color: #334155;
+
+      &::before {
+        color: #f3f4f6;
+      }
+
+      a {
+        color: #60a5fa;
+      }
+    }
+  }
+
+  .footnotes {
+    border-top-color: #374151;
+    color: #9ca3af;
+  }
+
+  .svg-icon {
+    fill: #9ca3af;
+  }
+}
