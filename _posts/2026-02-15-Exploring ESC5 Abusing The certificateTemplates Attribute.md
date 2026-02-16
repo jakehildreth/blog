@@ -49,7 +49,7 @@ As described in the [dangling templates article](https://jakehildreth.github.io/
 The last bullet point is described in AD CS parlance as an "ESC5". I've previously described ESC5 as the "hand-waviest" of all ESCs since it describes vulnerable access controls on basically all non-template AD CS objects. There are tons of non-template AD CS objects with wildly varying levels of risk presented by each.
 
 I actually reached out to Will and Lee, the progenitors of the ESC nomenclature, last week in preparation for this article. Lee essentially confirmed the "hand-waviest" status:
->We we were closing up on the research by this point (and getting sick of ADCS :P), so it's a bit overly broad since we didn't dive into all objects in that container :D
+>\[W\]e we were closing up on the research by this point (and getting sick of ADCS :P), so it's a bit overly broad since we didn't dive into all objects in that container :D
 
 As you might've already guessed, the second pentest firm modified the `certificateTemplates` property on a `pKIEnrollmentService` object and reenabled the template you disabled after the first pentest. Once enabled, the pentesters requested a certificate that allowed them to authenticate as a Domain Admin.
 
