@@ -77,10 +77,11 @@ In addition, the unprotected `certificateTemplates` needs to be addressed. In th
 1. View the discretionary access control list (DACL) on a `pKIEnrollmentService` object found in the `CN=Enrollment Services,CN=Public Key Services,CN=Services,CN=Configuration,DC=your,DC=domain` container.
 2. Inspect each ACE in the DACL and remove any ACE that grants a dangerous permission to any principal that is neither an AD or AD CS Admin.
 3. Repeat Steps 1 & 2 for all ACEs on all `pKIEnrollmentService` objects in the `CN=Enrollment Services` container.
-If you discover a principal that *needs* dangerous rights on a CA object for whatever reason, you've identified a new Tier 0 object! t accordingly!
+If you discover a principal that *needs* dangerous rights on a CA object for whatever reason... Congrats! You've identified a new Tier 0 object!
 
+Protect it accordingly!
 ## This Seems Hard
-You're not wrong. Securing AD is hard, so securing AD CA is extra hard because anything with the word "certificate" in the name is scary.
+You're not wrong. Securing AD is hard, so securing AD CS is extra hard because anything with the word "certificate" in the name is scary.
 
 Fortunately, you don't have to do all this manually. Instead, you can run [Locksmith](https://github.com/jakehildreth/Locksmith). Locksmith was designed to give you what you need to tighten up your AD CS environment as quickly as possible by providing per-issue risk ratings and remediation guidance. Here's the way to do it:
 ```powershell
