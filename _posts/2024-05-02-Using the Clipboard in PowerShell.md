@@ -7,7 +7,7 @@ If you’re using PowerShell 7.4 in Windows Terminal (or any terminal applicatio
 
 You can even configure your PowerShell profile to automatically identify when you’re in a remote shell to automatically apply that parameter without you specifying it.
 
-Set-Clipboard Documentation: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-clipboard?view=powershell-7.4
+Set-Clipboard Documentation: [https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-clipboard?view=powershell-7.4](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-clipboard?view=powershell-7.4)
 
-GitHub Issue that suggested the feature: https://github.com/PowerShell/PowerShell/issues/18116
+GitHub Issue that suggested the feature: [https://github.com/PowerShell/PowerShell/issues/18116](https://github.com/PowerShell/PowerShell/issues/18116)
 
