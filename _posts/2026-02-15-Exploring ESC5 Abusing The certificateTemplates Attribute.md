@@ -66,18 +66,18 @@ Nothing. AD CS is a baroque monstrosity of interconnected pieces with unexpected
 In the case described above, disabling the template was a good first step! Disablement contains the immediate risk, and the template can be quickly re-enabled if something breaks in production.
 
 ## What Could You Have Done Better?
-To further reduce or even remove the risk presented by the dangerous ESC1 template, one or more of the following steps needed to be taken:
-1. If no one screams for a month or two after disabling the template, document the template's configuration[^1] then **DELETE IT.** A template that does not exist cannot be enabled and cannot be used for enrollment. However, if someone does scream...
-2. Remove the ability to supply a SAN during enrollment. There are very few situations where a Client Authentication certificate needs a SAN.
-3. Remove unnecessary Extended Key Usages (EKUs) from the template. SANs are typically only required for certificates used for Server Authentication (aka HTTPS/TLS certs.) Adding one or more Client Authentication EKUs to a Server Auth cert is a footgun waiting to maim you.
-4. Remove enrollment rights from all low-privileged principals. At the very least, *tightly scope* who can enroll in the template. The fewer principals that can request a dangerous certificate, the smaller the attack surface.
-5. If you've gone through Steps 1-4 above and the template still requires a large enrollment scope, the ability to supply a SAN, and include Client Auth EKUs, enable Manager Approval. When a template has Manager Approval enabled, any requests that come via that template must be manually approved before a certificate is generated.
-
-In addition, the unprotected `certificateTemplates` needs to be addressed. In the example scenario above, the ESC1 template could not have been reenabled if only AD and AD CS Admins could modify this dumb property. To do so:
+First things first, the poorly protected `certificateTemplates` property needs to be addressed. In the scenario above, the ESC1 template could not have been reenabled if only AD and AD CS Admins could modify this dumb property. To do so:
 1. View the discretionary access control list (DACL) on a `pKIEnrollmentService` object found in the `CN=Enrollment Services,CN=Public Key Services,CN=Services,CN=Configuration,DC=your,DC=domain` container.
 2. Inspect each ACE in the DACL and remove any ACE that grants a dangerous permission to any principal that is neither an AD or AD CS Admin.
 3. Repeat Steps 1 & 2 for all ACEs on all `pKIEnrollmentService` objects in the `CN=Enrollment Services` container.
 If you discover a principal that *needs* dangerous rights on a CA object for whatever reason... Congrats! You've identified a new Tier 0 object!
+
+To further reduce or even remove the risk presented by the dangerous ESC1 template, one or more of the following steps needed to be taken:
+1. If no one screams for a month or two after disabling the template, document the template's configuration[^1] then **DELETE IT.** A template that does not exist cannot be enabled and cannot be used for enrollment. However, if someone does scream...
+2. Remove the ability to supply a SAN during enrollment. In many instnces (but not all), a Client Authentication certificate does not needs SAN.
+3. Remove unnecessary Extended Key Usages (EKUs) from the template. SANs are typically only required for certificates used for Server Authentication (aka HTTPS/TLS certs.) Adding one or more Client Authentication EKUs to a Server Auth cert is a footgun waiting to maim you.
+4. Remove enrollment rights from all low-privileged principals. At the very least, *tightly scope* who can enroll in the template. The fewer principals that can request a dangerous certificate, the smaller the attack surface.
+5. If you've gone through Steps 1-4 above and the template still requires a large enrollment scope, the ability to supply a SAN, and include Client Auth EKUs, enable Manager Approval. When a template has Manager Approval enabled, any requests that come via that template must be manually approved before a certificate is generated.
 
 Protect it accordingly!
 ## This Seems Hard
