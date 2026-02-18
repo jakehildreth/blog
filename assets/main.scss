@@ -85,18 +85,18 @@ pre {
 }
 
 // Art theme - tight spacing for ASCII art
-.language-text,
-.language-ascii,
-.language-art,
-.language-plaintext {
-  .highlight pre,
-  pre {
-    line-height: 1.0 !important;
-  }
-  
-  code {
-    line-height: 1.0 !important;
-  }
+code.language-art,
+code.language-text,
+code.language-ascii,
+code.language-plaintext {
+  line-height: 1.0 !important;
+}
+
+pre:has(> code.language-art),
+pre:has(> code.language-text),
+pre:has(> code.language-ascii),
+pre:has(> code.language-plaintext) {
+  line-height: 1.0 !important;
 }
 
 // ============================================================
