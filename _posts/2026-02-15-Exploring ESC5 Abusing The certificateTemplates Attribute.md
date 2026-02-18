@@ -19,7 +19,7 @@ Imagine you're a motivated network defender. You hire a penetration testing firm
 This set of conditions describe the infamous "ESC1" template. Templates that match this set of conditions are extremely dangerous because they **allow low-privileged principals to request and immediately receive a certificate that can be used to authenticate as any other principal in the environment**, including AD Admins or Domain Controllers. 😱 Bad stuff.
 
 The pentest firm uses the template to request a certificate that allows them to impersonate your Domain Admin account. With a certificate in hand, they authenticate as your DA and perform a DCSync attack.
-```
+```art
  ▄█▀▀▀▀  ▄█▀█▄  ██▄ ▄██ ██▀▀▀▀▀   ▄█▀▀▀█▄ ██   ██ ██▀▀▀▀▀ ██▀▀▀█▄
 ██  ▄▄▄ ██   ██ ██▀█▀██ ██▄▄▄▄    ██   ██ ██▄ ▄██ ██▄▄▄▄  ██  ▄██
 ▀█▄  ██ ██▀▀▀██ ██ ▀ ██ ██        ██   ██  ▀███▀  ██      ██▀██▄
@@ -29,7 +29,7 @@ The pentest firm uses the template to request a certificate that allows them to 
 Being a motivated defender 💙, you immediately disable this template on all Issuing Certification Authorities (CAs) in your environment. The penetration testing firm congratulates you on your quick attention to the matter, your CISO gives you a 50% bonus, and your manager gives you a pony.
 ## Not So Fast!
 Twelve months later, a different penetration testing firm tests your environment and gets to Domain Admin using **the very same template** you disabled after last year's test! Your manager takes away your pony. 😭
-```
+```art
  ▄█▀▀▀▀  ▄█▀█▄  ██▄ ▄██ ██▀▀▀▀▀   ▄█▀▀▀█▄ ██   ██ ██▀▀▀▀▀ ██▀▀▀█▄
 ██  ▄▄▄ ██   ██ ██▀█▀██ ██▄▄▄▄    ██   ██ ██▄ ▄██ ██▄▄▄▄  ██  ▄██
 ▀█▄  ██ ██▀▀▀██ ██ ▀ ██ ██        ██   ██  ▀███▀  ██      ██▀██▄
