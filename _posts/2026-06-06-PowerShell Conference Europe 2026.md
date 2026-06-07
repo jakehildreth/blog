@@ -124,11 +124,13 @@ This format is *amazing.* The slides advance themselves, and the presenters have
 * Your Graph Apps Are Over-Privileged — Let’s Fix That! - Morten Mynster
 * How hard can it be to count a few XML nodes? - Manfred Wallner
 * PoShaKucha hits the lock screen - Frank Lindenblatt
+
 ![]({{ site.baseurl }}/images/Glenn.png)
 ![]({{ site.baseurl }}/images/Morten.png)
 ![]({{ site.baseurl }}/images/PoshaKuChas.png)
 ## The Community
 I've always felt completely at home in the PowerShell community online, and the in-person experience was no different. I was able to walk up to anyone and start a conversation without issue. It reminded me a lot of the vibe I get from [Blue Team Con](https://blueteamcon.com) but even more beginner-friendly. It was awesome to meet tons of people in person that I knew from online as well as a few people I did not know previously. Like any community, there are small social circles within the larger community, but unlike other communities those small social circles never felt like barriers to new friends. Most importantly, there was constant discussion about how to make the community more accessible.
+
 ![]({{ site.baseurl }}/images/IMG_1573.png)
 ![]({{ site.baseurl }}/images/IMG_1610.png)
 ![]({{ site.baseurl }}/images/IMG_1619.png)
