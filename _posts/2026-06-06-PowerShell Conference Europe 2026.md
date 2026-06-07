@@ -1,6 +1,7 @@
 ---
 title: PowerShell Conference Europe 2026
 creation_date: 2026-06-06
+modified_date: 2026-06-07
 ---
 Hello, friends!
 

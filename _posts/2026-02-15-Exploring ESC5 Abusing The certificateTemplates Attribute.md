@@ -1,6 +1,6 @@
 ---
 creation_date: 2026-02-15
-modified_date: 2026-02-17
+modified_date: 2026-06-07
 title: "Exploring ESC5: Abusing The certificateTemplates Attribute"
 ---
 Hello, friends!
