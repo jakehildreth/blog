@@ -6,7 +6,7 @@ title: "Exploring ESC5: Abusing The certificateTemplates Attribute"
 Hello, friends!
 
 A [couple weeks ago](https://jakehildreth.github.io/blog/2026/01/31/Introducing-Dangling-Templates.html), I introduced the concept of "dangling" certificate templates in Active Directory Certificate Services (AD CS). This little bit of AD CS weirdness quickly became my most popular article even though it requires multiple misconfigurations to exist for successful abuse. While I've seen this specific combination of misconfigurations in real life, what I'll describe in this article is much more common and could happen with a **single** misplaced access control entry (ACE) on a single property: `certificateTemplates`.
-# A Common Scenario
+# The Scenario
 Imagine you're a motivated network defender. You hire a penetration testing firm to find and poke the squishy bits of your network. They *immediately* find a certificate template which meets the following conditions:
 
 - Creates certificates that can be used for **client authentication**
