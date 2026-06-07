@@ -11,7 +11,7 @@ I started my journey to the conference in the afternoon of Saturday, May 30th wi
 
 About twenty minutes before landing at FRA, the pilot came on the intercom to inform us that landings were paused due to heavy storms. Forty minutes after that, the pilot informed us we were low on fuel and diverting to Munich (MUC) for refueling.
 
-	It took about an hour to fly to MUC, two hours to fuel up, then one more hour to fly back to FRA. Air conditioning was turned off for part of the time while waiting for refueling, but thankfully was restored before people started getting too anxious. In the end, my scheduled eight-hour flight ended up taking twelve hours. 😭
+It took about an hour to fly to MUC, two hours to fuel up, then one more hour to fly back to FRA. Air conditioning was turned off for part of the time while waiting for refueling, but thankfully was restored before people started getting too anxious. In the end, my scheduled eight-hour flight ended up taking twelve hours. 😭
 
 After landing, passport control was quite quick because we landed so late. Finding the bus to get from Terminal 3 (where I landed) to Terminal 1 (where the train station is) was more difficult than expected, but I ended up pairing up with an older American couple who was also lost. With our powers combined, we finally found the bus and traveled to the train station.
 
@@ -30,18 +30,18 @@ I attended 13 different talks throughout the week. At other cons, I attend 1-2 t
 I did not get to catch much of this because I was working with Andrew Pla putting finishing touches on slides, but it was awesome to see Gael, Barbara, and Rob having a great time on stage dressed in shimmering sequins to celebrate the 10th PSConfEU. It's clear that the organizers love this conference, and you could feel it in the air.
 ### From ConfigMgr to Manager of Configs - Hailey Phillips
 I popped in at the end of Hailey's talk just as she was transitioning from technical talk into a more human-centric discussion. She had built a bunch of technical solutions to common problems in her org, but none of them got much uptake by her coworkers until lines of communication were more open. Open communication was definitely a recurring theme throughout many of the talks I saw.
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Hailey1.png)
+![]({{ site.baseurl }}/images/Hailey1.png)
 Abstract and slides: [https://github.com/psconfeu/2026/tree/main/hailey-phillips/from-configmgr-to-manager-of-configs](https://github.com/psconfeu/2026/tree/main/hailey-phillips/from-configmgr-to-manager-of-configs)
 Hailey's personal site: [https://www.allwayshype.com](https://www.allwayshype.com)
 ### Securing PowerShell From The Ground Up - Andrew Pla & Jake Hildreth
 In this session, Andrew and I talked about three common ways of securing PowerShell that have proven benefits: enhanced logging, Constrained Language Mode, and disabling PowerShell 2.0 on older versions of Windows. Despite a glitchy projector that *hated* Andrew's Mac, we ended up putting on a fairly well-reviewed talk and got plenty of follow-up questions from the crowd. Andrew even put together a tool (SecurityPosturePS) to make securing stuff a little easier. 
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/JakeAndrew.png)
+![]({{ site.baseurl }}/images/JakeAndrew.png)
 Abstract: [https://github.com/psconfeu/2026/tree/main/andrew-pla-jake-hildreth/securing-powershell-from-the-ground-up](https://github.com/psconfeu/2026/tree/main/andrew-pla-jake-hildreth/securing-powershell-from-the-ground-up)
 Tool: [https://github.com/AndrewPla/SecurityPosturePS](https://github.com/AndrewPla/SecurityPosturePS)
 Andrew's personal site: [https://andrewpla.tech](https://andrewpla.tech)
 ### Argument completers, Dynamic parameters, and more: Building better PowerShell functions - Ben Reader
 This talk blew my mind. I knew about basic and intermediate argument completion methods, but Ben shocked me by live coding a tool that separated argument completion logic from configuration in such an elegant manner that almost anyone could update the script and use it with little help. I especially loved that he kept harping on making things easier for the end user.
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Ben.png)
+![]({{ site.baseurl }}/images/Ben.png)
 Recording: [https://youtu.be/hYWCus5qPLc?si=w6P_j2unJMLovnSS](https://youtu.be/hYWCus5qPLc?si=w6P_j2unJMLovnSS)
 Abstract: [https://github.com/psconfeu/2026/tree/main/ben-reader/argument-completers-dynamic-parameters-and-more-building-better-powershell-functions](https://github.com/psconfeu/2026/tree/main/ben-reader/argument-completers-dynamic-parameters-and-more-building-better-powershell-functions)
 Ben's personal site: [https://powers-hell.com](https://powers-hell.com)
@@ -52,17 +52,17 @@ Abstract: [https://github.com/psconfeu/2026/tree/main/stephen-valdinger-andrew-p
 Stevie's personal site: [https://steviecoaster.dev](https://steviecoaster.dev)
 ### Who Am I? Applied Tokenology for PowerShellers - Evgenij Smirnov
 Fellow Semperian, Evgenij Smirnov, had a packed room for his talk about tokens... no not LLM tokens. Not cryptocurrency. Not even JWTs and the like. He was talking about access tokens, those little bits of info that contain the security credentials for your login session and identifies your groups and privileges etc. I had to leave his talk about 20 minutes in, but I was around long enough to see him poke a little fun at me and Andrew's tech issues. 🤣
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Evgenij.png)
+![]({{ site.baseurl }}/images/Evgenij.png)
 Abstract, slides, and demo materials: [https://github.com/psconfeu/2026/tree/main/evgenij-smirnov/who-am-i-applied-tokenology-for-powershellers](https://github.com/psconfeu/2026/tree/main/evgenij-smirnov/who-am-i-applied-tokenology-for-powershellers)
 Evgenij's personal site: [https://it-pro-berlin.de](https://it-pro-berlin.de)
 ### Level Up Your Terminal Experience - Andree Renneus
 I was only able to catch the last ten minutes of Andree's talk about cool Terminal stuff, but I was super-impressed with the wide breadth of tools and toys that he showed in those last ten minutes since it was focused on one of my current special interest: terminal user interfaces. I definitely want to see the full recording of this one.
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Andree1.png)
+![]({{ site.baseurl }}/images/Andree1.png)
 Abstract: [https://github.com/psconfeu/2026/tree/main/andree-renneus/level-up-your-terminal-experience](https://github.com/psconfeu/2026/tree/main/andree-renneus/level-up-your-terminal-experience)
 Andree's BlueSky: [https://bsky.app/profile/trackd.x64.se](https://bsky.app/profile/trackd.x64.se)
 ### Watch Your Step! Building Long-Running Scripts That Don't Trip Over Themselves - Jake Hildreth
 I missed pieces of Evgenij and Andree's talks because I snuck away to the hotel bar for a drink. My nerves were *so* on edge. But it turns out, I had nothing to fear. My talk flowed exactly as I'd practiced and my demos went off without a hitch. People seemed genuinely interested in [Stepper](https://jakehildreth.github.io/blog/2025/12/21/Stepper.html), asked lots of questions, and submitted multiple feature requests live!
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Jake.png)
+![]({{ site.baseurl }}/images/Jake.png)
 Abstract, slides, and demo materials: [https://github.com/psconfeu/2026/tree/main/jake-hildreth/watch-your-step-building-long-running-scripts-that-dont-trip-over-themselves](https://github.com/psconfeu/2026/tree/main/jake-hildreth/watch-your-step-building-long-running-scripts-that-dont-trip-over-themselves)
 ### IntuneStack - a CI/CD PowerShell workflow for managing Intune policy - Hailey Phillips
 I've never used it, but apparently Intune is a poor experience for use in shops with modern DevOps-style management. Everyone sees the same GUI, and "we all click together", as Hailey said multiple times in this session. IntuneStack adds a bit of CI/CD goodness to Intune by designating computer groups as dev/test/prod. When an update reaches 80% success in the dev group, it gets promoted to a test update and starts deploying to that group. Repeat for prod. Pretty neat!
@@ -71,7 +71,7 @@ Abstract: [https://github.com/psconfeu/2026/tree/main/hailey-phillips/intunestac
 Hailey's personal site: [https://www.allwayshype.com](https://www.allwayshype.com)
 ### Spawn of a Shell - Handling Sub Processes - Jordan Borean
 Did you know there are like 13 different ways to spawn new processes in PowerShell? And each one has its own little quirks? I didn't either, but now I do! Jordan expertly walked through the varius approaches to sub-processes with a terminal-based presentation style that was simultaenously information and demo.
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Jordan.png)
+![]({{ site.baseurl }}/images/Jordan.png)
 Abstract and presentation code: [https://github.com/psconfeu/2026/tree/main/jordan-borean/spawn-of-a-shell-handling-sub-processes](https://github.com/psconfeu/2026/tree/main/jordan-borean/spawn-of-a-shell-handling-sub-processes)
 Jordan's GitHub: [https://github.com/jborean93](https://github.com/jborean93)
 ### Microsoft Graph with PowerShell 101 - Jan-Hendrik Peters
@@ -91,7 +91,7 @@ Abstract, slides, and code: [https://github.com/psconfeu/2026/tree/main/bjorn-su
 Björn's personal site: [https://bjompen.com/](https://bjompen.com/)
 ### Behind the Scenes of PwshSpectreConsole - Andree Renneus
 I initially joined this session to support Andree. He was programmed against Jeffrey Snover, Sean Wheeler, and Fred Weinmann and expected to have no one in his talk. Attendance was slimmer than he'd have liked, but honestly, it might've made it better. Jordan Borean and Jakub Jareš asked tons of questions throughout the session that Andree handled with aplomb. His behind the scenes view of one of the most powerful modules in the PowerShell world really shed light on the design decisions and future plans. Can't wait to see where PwshSpectreConsole goes in the next year!
-![]({{ site.baseurl }}/images/{{ site.baseurl }}/images/Andree2.png)
+![]({{ site.baseurl }}/images/Andree2.png)
 Abstract: [https://github.com/psconfeu/2026/tree/main/andree-renneus/behind-the-scenes-of-pwshspectreconsole](https://github.com/psconfeu/2026/tree/main/andree-renneus/behind-the-scenes-of-pwshspectreconsole)
 Andree's BlueSky: [https://bsky.app/profile/trackd.x64.se](https://bsky.app/profile/trackd.x64.se)
 ### The PoShaKucha presentations: The Stage is yours!
