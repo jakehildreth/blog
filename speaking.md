@@ -13,6 +13,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Talk Title:** Attackers Aren’t Wizards: Turning Red Team Lore into Real Controls
 * **Co-presenter:** [Nick Vailensi](https://www.linkedin.com/in/nicholas-valiensi-2868278b/)
 * **Abstract:**
+
 	Security culture often romanticizes the “offensive mindset,” leading teams to copy red-team tricks without understanding what those signals really mean. Both red and blue teams routinely adopt patterns like querying for adminCount=1 or chasing Kerberoasting as a “cool party trick,” while missing the underlying design flaws—weak service account practices, brittle crypto choices, or systemic delegation issues—that make these attacks so reliable.
 	
 	This talk reframes offense as the ability to model realistic attackers, map their paths through your environment, and tie those paths to concrete controls and monitoring. Nick and Jake will use familiar techniques—password spraying, LSASS dumping, constrained/unconstrained delegation checks—as case studies in how shallow models drive bad prioritization, hero worship, and cargo-cult defenses. You’ll walk away with a more grounded attacker model and practical ideas for reshaping security culture so attackers stop being treated like wizards and their tactics start being treated like engineering signals to be designed against.
@@ -58,6 +59,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Where:** [https://www.meetup.com/pacific-powershell-user-group/](https://www.meetup.com/pacific-powershell-user-group/)
 * **Talk Title:** Overcoming Certutil Challenges in PowerShell using Crescendo
 * **Abstract:**
+  
 	In this talk, I discussed how I used the Crescendo project to wrap `certutil.exe` to make it quite a bit more PowerShell-friendly.
 
 #### Thursday Defensive
