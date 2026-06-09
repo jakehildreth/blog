@@ -31,6 +31,7 @@ I did not get to catch much of this because I was working with Andrew Pla puttin
 ### From ConfigMgr to Manager of Configs - Hailey Phillips
 I popped in at the end of Hailey's talk just as she was transitioning from technical talk into a more human-centric discussion. She had built a bunch of technical solutions to common problems in her org, but none of them got much uptake by her coworkers until lines of communication were more open. Open communication was definitely a recurring theme throughout many of the talks I saw.
 ![]({{ site.baseurl }}/images/Hailey1.png)
+* Recording: [https://www.youtube.com/watch?v=ZFNM0wisenE](https://www.youtube.com/watch?v=ZFNM0wisenE)
 * Abstract and slides: [https://github.com/psconfeu/2026/tree/main/hailey-phillips/from-configmgr-to-manager-of-configs](https://github.com/psconfeu/2026/tree/main/hailey-phillips/from-configmgr-to-manager-of-configs)
 * Hailey's personal site: [https://www.allwayshype.com](https://www.allwayshype.com)
 
