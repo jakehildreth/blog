@@ -18,7 +18,14 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 	
 	This talk reframes offense as the ability to model realistic attackers, map their paths through your environment, and tie those paths to concrete controls and monitoring. Nick and Jake will use familiar techniques—password spraying, LSASS dumping, constrained/unconstrained delegation checks—as case studies in how shallow models drive bad prioritization, hero worship, and cargo-cult defenses. You’ll walk away with a more grounded attacker model and practical ideas for reshaping security culture so attackers stop being treated like wizards and their tactics start being treated like engineering signals to be designed against.
 
+#### Wild West Hackin' Fest Deadwood
+* **When:** October 8-9, 2026
+* **Where:** Deadwood, SD
+* **Site:** [hipconf.com](https://hipconf.com)
+* **Talk Title:** The Goat, The ESCalator, and The Locksmith: A Three-Act AD CS Education
+* **Abstract:**
 
+> TBD
 ### Past Events
 #### PSConfEU
 * **When:** June 1-4, 2026
