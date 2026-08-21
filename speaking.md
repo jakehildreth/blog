@@ -26,6 +26,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Abstract:**
 
 > TBD
+
 ### Past Events
 #### PSConfEU
 * **When:** June 1-4, 2026
