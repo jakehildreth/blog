@@ -25,7 +25,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Talk Title:** The Goat, The ESCalator, and The Locksmith: A Three-Act AD CS Education
 * **Abstract:**
 
-> TBD
+    TBD
 
 ### Past Events
 #### PSConfEU
