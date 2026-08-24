@@ -25,7 +25,15 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 * **Talk Title:** The Goat, The ESCalator, and The Locksmith: A Three-Act AD CS Education
 * **Abstract:**
 
-    TBD
+    Active Directory Certificate Services is everywhere, it's almost always misconfigured, and most organizations have no idea how bad it really is. In this talk, we'll walk through the entire AD CS security lifecycle — from building a vulnerable lab, to exploiting it, to fixing everything — using three open-source PowerShell tools purpose-built for the job.
+    
+    Act I: The Goat. We start by deploying a deliberately vulnerable AD CS environment using ADCSGoat. In minutes, we'll stand up a lab packed with real-world misconfigurations — ESC1 through ESC11 — that mirror what you'd find in production environments everywhere. No manual setup, no guesswork. Just Install-ADCSGoat and you've got a playground full of terrible decisions.
+    
+    Act II: The ESCalator. With our lab in place, we turn attacker. ESCalator identifies exploitable AD CS issue combinations that aren't always obvious on their own — the kind of chained misconfigurations that quietly hand over the keys to your forest. We'll walk through how these escalation paths work and why traditional template-by-template reviews miss them.
+    
+    Act III: The Locksmith. Now we fix it. Locksmith 2 scans the environment for ESC1 through ESC16 vulnerabilities, generates targeted PowerShell remediation scripts, and even provides revert scripts so you can undo changes if something breaks. We'll demo the interactive TUI and show how a defender can go from "we have a problem" to "we had a problem" in a single sitting.
+    
+    You'll leave with three tools you can install today, a lab you can practice in tonight, and the confidence to audit and remediate AD CS in your own environment tomorrow.
 
 ### Past Events
 #### PSConfEU
