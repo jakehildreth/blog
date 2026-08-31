@@ -60,16 +60,16 @@ layout: base
   </div>
 
   <nav class="post-nav" aria-label="More posts">
-    {%- if page.next -%}
-      <a class="post-nav-prev" href="{{ page.next.url | relative_url }}">
+    {%- if page.previous -%}
+      <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}">
         <span class="post-nav-label">← Older</span>
-        <span class="post-nav-title">{{ page.next.title | escape }}</span>
+        <span class="post-nav-title">{{ page.previous.title | escape }}</span>
       </a>
     {%- endif -%}
-    {%- if page.previous -%}
-      <a class="post-nav-next" href="{{ page.previous.url | relative_url }}">
+    {%- if page.next -%}
+      <a class="post-nav-next" href="{{ page.next.url | relative_url }}">
         <span class="post-nav-label">Newer →</span>
-        <span class="post-nav-title">{{ page.previous.title | escape }}</span>
+        <span class="post-nav-title">{{ page.next.title | escape }}</span>
       </a>
     {%- endif -%}
   </nav>
