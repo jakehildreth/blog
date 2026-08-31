@@ -1,7 +1,7 @@
 ---
 title: PowerShell Conference Europe 2026
 creation_date: 2026-06-06
-modified_date: 2026-06-09
+modified_date: 2026-08-30
 description: "Storm diversions, first-time hallway meetings, and two talks: a summary from my first PowerShell Conference Europe in Wiesbaden."
 tags: [conference, powershell]
 ---

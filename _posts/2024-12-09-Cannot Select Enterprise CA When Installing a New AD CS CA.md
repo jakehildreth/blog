@@ -1,7 +1,7 @@
 ---
 title: Cannot Select "Enterprise CA" When Installing a New AD CS CA
 creation_date: December 9, 2024
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [adcs]
 description: "Forty hours before a presentation and the Enterprise CA option is greyed out. Fixing the AD CS install under demo-god pressure."
 ---

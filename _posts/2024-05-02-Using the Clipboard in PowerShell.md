@@ -1,7 +1,7 @@
 ---
 title: Using the Clipboard in PowerShell
 creation_date: May 2, 2024
-modified_date: 2026-02-17
+modified_date: 2026-08-30
 tags: [powershell]
 description: "Set-Clipboard's -AsOSC52 parameter pipes remote output to your local clipboard over any terminal that supports OSC52. Neat."
 ---

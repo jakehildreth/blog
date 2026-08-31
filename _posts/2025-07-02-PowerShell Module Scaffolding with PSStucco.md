@@ -1,6 +1,6 @@
 ---
 creation_date: 2025-06-20
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 title: PowerShell Module Scaffolding with PSStucco
 tags: [powershell]
 description: "A remix of Gilbert Sanchez's Stucco article, updated for PSStucco: scaffolding new PowerShell modules fast."

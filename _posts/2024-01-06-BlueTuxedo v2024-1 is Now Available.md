@@ -1,7 +1,7 @@
 ---
 title: BlueTuxedo v2024.1 is Now Available
 creation_date: January 6, 2024
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [bluetuxedo, powershell]
 description: "BlueTuxedo gets its first official release and a more-or-less monthly cadence. New year, new release."
 ---

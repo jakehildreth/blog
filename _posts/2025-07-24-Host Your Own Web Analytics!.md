@@ -1,7 +1,7 @@
 ---
 title: Host Your Own Web Analytics!
 creation_date: 2025-07-15
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [selfhosting]
 description: "Thing I said I'd never care about: blog views. Thing I spent the last hour doing: setting up Matomo."
 ---

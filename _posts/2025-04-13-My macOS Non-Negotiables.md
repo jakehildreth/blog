@@ -1,7 +1,7 @@
 ---
 title: My macOS Non-Negotiables
 creation_date: April 6, 2025
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [macos]
 description: "I'm a macOS-first user. The apps and settings I can't live without."
 ---

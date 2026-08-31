@@ -1,7 +1,7 @@
 ---
 title: Locksmith (AD CS Remediation Tool) is now available!
 creation_date: January 28, 2024
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, adcs]
 description: "Locksmith Mode 4 now fixes ownership issues automatically. Short notes this month; happy birthday to my wife."
 ---

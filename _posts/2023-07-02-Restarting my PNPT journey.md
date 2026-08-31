@@ -1,7 +1,7 @@
 ---
 title: Restarting my PNPT journey
 creation_date: July 2, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [learning, career, security]
 description: "Picking the PNPT certification back up after a year and a half, starting with Windows Privilege Escalation."
 ---

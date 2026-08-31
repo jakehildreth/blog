@@ -1,7 +1,7 @@
 ---
 title: Creating a Release Schedule
 creation_date: June 24, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, powershell]
 description: "Working out a monthly release cadence for Locksmith and BlueTuxedo that fits the actual humans doing the work."
 ---

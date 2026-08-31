@@ -1,7 +1,7 @@
 ---
 title: Thank you, Universe!
 creation_date: July 14, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [career]
 description: "Lost my earbuds somewhere between appointments and mowing the septic mound. A very short gratitude post."
 ---

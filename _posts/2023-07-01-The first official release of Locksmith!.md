@@ -1,7 +1,7 @@
 ---
 title: The first official release of Locksmith!
 creation_date: July 1, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, adcs]
 description: "Locksmith settles into a monthly release cadence; new versions land the first weekend of each month."
 ---

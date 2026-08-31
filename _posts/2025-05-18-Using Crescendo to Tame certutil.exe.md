@@ -1,7 +1,7 @@
 ---
 title: Using Crescendo to Tame certutil.exe
 creation_date: 2025-05-10
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [powershell, adcs]
 description: "certutil.exe is good enough, but Crescendo can wrap it into something actually PowerShell-friendly."
 ---

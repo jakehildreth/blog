@@ -1,7 +1,7 @@
 ---
 title: Locksmith Lab Setup
 creation_date: June 28, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, adcs]
 description: "The home lab I use to write and review Locksmith code: a Mid-2014 MacBook Pro plus a pile of remote-access tooling."
 ---

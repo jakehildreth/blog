@@ -1,7 +1,7 @@
 ---
 title: You Need An Active Directory Auditing Group!
 creation_date: October 9, 2024
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [security]
 description: "After assessing 6-10 AD forests a year, one constant: every org needs a dedicated AD auditing group. Here's why and how."
 ---

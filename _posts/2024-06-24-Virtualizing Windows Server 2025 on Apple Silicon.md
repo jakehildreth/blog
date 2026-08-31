@@ -1,7 +1,7 @@
 ---
 title: Virtualizing Windows Server 2025 on Apple Silicon
 creation_date: June 24, 2024
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [homelab, macos]
 description: "Hi, I'm Jake, and I'm a Mac user. Getting Windows Server 2025 virtualized on Apple Silicon for AD security work."
 ---

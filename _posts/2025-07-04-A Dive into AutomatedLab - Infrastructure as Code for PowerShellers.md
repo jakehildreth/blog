@@ -1,7 +1,7 @@
 ---
 title: A Dive into AutomatedLab - Infrastructure as Code for PowerShellers
 creation_date: 2025-05-16
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [homelab, powershell]
 description: "Infrastructure as code for PowerShell people: building lab environments with AutomatedLab."
 ---

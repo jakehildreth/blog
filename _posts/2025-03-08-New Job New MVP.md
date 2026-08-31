@@ -1,7 +1,7 @@
 ---
 title: New Job! New MVP?
 creation_date: 2025-03-08
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [career]
 description: "Two whirlwind months: a new job and an MVP award. A short journey through the FUD."
 ---

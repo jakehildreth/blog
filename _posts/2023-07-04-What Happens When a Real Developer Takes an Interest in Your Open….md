@@ -1,7 +1,7 @@
 ---
 title: What Happens When a Real Developer Takes an Interest in Your Open…
 creation_date: July 4, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, career]
 description: "Przemyslaw Klys submitted a Locksmith PR and suddenly my scrappy script had to grow up into a real module."
 ---

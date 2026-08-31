@@ -1,7 +1,7 @@
 ---
 title: Locksmith v2023.12 is now available!
 creation_date: December 16, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [locksmith, adcs]
 description: "People are using Mode 4 auto-remediation in the wild, which terrified us into finally giving it some love."
 ---

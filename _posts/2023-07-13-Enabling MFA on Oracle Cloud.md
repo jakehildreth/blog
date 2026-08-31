@@ -1,7 +1,7 @@
 ---
 title: Enabling MFA on Oracle Cloud
 creation_date: July 13, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [selfhosting, security]
 description: "Oracle Cloud wants MFA on admin accounts now. Setting it up on the free-tier box that runs the Locksmith Mattermost server."
 ---

@@ -1,7 +1,7 @@
 ---
 title: A Tiny Privilege Escalation by Abusing Dangling Templates
 creation_date: 2026-01-8
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 description: "Delete an enabled certificate template and its name can stick around on the CA; recreate the template and it's silently enabled. A tiny privilege escalation hiding in AD CS."
 tags: [adcs, security, escalator]
 ---

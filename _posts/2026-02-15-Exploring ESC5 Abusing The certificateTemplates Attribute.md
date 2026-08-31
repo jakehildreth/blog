@@ -1,6 +1,6 @@
 ---
 creation_date: 2026-02-15
-modified_date: 2026-06-07
+modified_date: 2026-08-30
 title: "Exploring ESC5: Abusing The certificateTemplates Attribute"
 description: "One misplaced ACE on a CA's certificateTemplates property can hand over your forest. How ESC5-style abuse of that attribute works, and how to spot it."
 tags: [adcs, security, escalator]

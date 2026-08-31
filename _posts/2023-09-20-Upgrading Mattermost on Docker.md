@@ -1,7 +1,7 @@
 ---
 title: Upgrading Mattermost on Docker
 creation_date: September 20, 2023
-modified_date: 2026-02-15
+modified_date: 2026-08-30
 tags: [selfhosting]
 description: "The Mattermost server went out of support. A reluctant sysadmin's notes on upgrading it under Docker."
 ---
