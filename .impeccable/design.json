@@ -12,9 +12,9 @@
       "magenta-glow": { "role": "secondary", "displayName": "Magenta Glow", "canonical": "#ff7bd9", "tonalRamp": ["#4d1240", "#7a2066", "#a7338e", "#d34bb8", "#ff7bd9", "#ff9de5", "#ffc0ee", "#ffe3f8"] }
     },
     "typographyMeta": {
-      "body": { "displayName": "Body", "purpose": "Long-form reading at 17px/1.7; system stack so text reads natively on every platform." },
+      "body": { "displayName": "Body", "purpose": "Long-form reading at 17px/1.7; Inter (self-hosted variable) for long-form reading at 17px/1.7." },
       "headline": { "displayName": "Headline", "purpose": "h1–h6, year headings, post-list links at weight 500 — emphasis through color and structure, not heaviness." },
-      "mono": { "displayName": "Mono", "purpose": "JetBrains Mono for all code; art/text/ascii/plaintext fences force line-height 1.0 to preserve ASCII diagrams." },
+      "mono": { "displayName": "Mono", "purpose": "Berkeley Mono (self-hosted) for all code and headings; art/text/ascii/plaintext fences force line-height 1.0 to preserve ASCII diagrams." },
       "label": { "displayName": "Label", "purpose": "Uppercase, +0.5px tracking metadata (dates) at 0.85em." }
     },
     "shadows": [
@@ -36,7 +36,7 @@
       "refersTo": "nav-link",
       "description": "Header text links; hover shifts to the theme accent with no underline.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">about</a><a class=\"ds-nav-link\" href=\"#\">speaking</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 20px; } .ds-nav-link { color: #2d2d2d; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 17px; text-decoration: none; transition: color 0.15s ease; } .ds-nav-link:hover { color: #1a6dd4; } .ds-nav-link:focus-visible { outline: 2px solid #1a6dd4; outline-offset: 2px; }"
+      "css": ".ds-nav { display: flex; gap: 20px; } .ds-nav-link { color: #2d2d2d; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 500; font-size: 17px; text-decoration: none; transition: color 0.15s ease; } .ds-nav-link:hover { color: #1a6dd4; } .ds-nav-link:focus-visible { outline: 2px solid #1a6dd4; outline-offset: 2px; }"
     },
     {
       "name": "Theme Toggle",
@@ -52,15 +52,15 @@
       "refersTo": "toc-panel",
       "description": "'On this page' table of contents — boxed panel under 1200px, sticky marginal note at 220px hanging into the margin on wide screens.",
       "html": "<nav class=\"ds-toc\"><span class=\"ds-toc-label\">On this page</span><ul><li><a href=\"#\">The lab setup</a></li><li><a href=\"#\">Exploiting ESC1</a></li><li><a href=\"#\">Fixing everything</a></li></ul></nav>",
-      "css": ".ds-toc { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25em 1.25em 1.25em 2.5em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.9em; } .ds-toc-label { display: block; font-weight: 700; margin-bottom: 0.5em; margin-left: -1.25em; color: #1a1a2e; } .ds-toc ul { margin: 0; padding: 0; list-style: disc; } .ds-toc li { margin-bottom: 0.3em; } .ds-toc a { color: #1a6dd4; text-decoration: none; } .ds-toc a:hover { text-decoration: underline; }"
+      "css": ".ds-toc { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25em 1.25em 1.25em 2.5em; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.9em; } .ds-toc-label { display: block; font-weight: 700; margin-bottom: 0.5em; margin-left: -1.25em; color: #1a1a2e; } .ds-toc ul { margin: 0; padding: 0; list-style: disc; } .ds-toc li { margin-bottom: 0.3em; } .ds-toc a { color: #1a6dd4; text-decoration: none; } .ds-toc a:hover { text-decoration: underline; }"
     },
     {
       "name": "Inline Code",
       "kind": "custom",
       "refersTo": "inline-code",
-      "description": "JetBrains Mono inline code in pink on a tinted chip; distinguishes code from links at a glance.",
+      "description": "Berkeley Mono inline code in pink on a tinted chip; distinguishes code from links at a glance.",
       "html": "<p class=\"ds-prose\">Run <code class=\"ds-inline-code\">Invoke-Locksmith</code> against the forest root.</p>",
-      "css": ".ds-prose { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.7; color: #2d2d2d; } .ds-inline-code { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 85%; color: #d63384; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.2em 0.4em; }"
+      "css": ".ds-prose { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 17px; line-height: 1.7; color: #2d2d2d; } .ds-inline-code { font-family: 'Berkeley Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 85%; color: #d63384; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.2em 0.4em; }"
     },
     {
       "name": "Code Block",
@@ -68,26 +68,26 @@
       "refersTo": "code-block",
       "description": "Fenced code: tonal panel, 8px radius, horizontal scroll, Rouge syntax highlighting.",
       "html": "<pre class=\"ds-code-block\"><code>Get-ADObject -Filter 'objectClass -eq \"pKIEnrollmentService\"' `</br>  -SearchBase $ConfigNC</code></pre>",
-      "css": ".ds-code-block { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 87.5%; line-height: 1.3; color: #2d2d2d; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 16px; overflow-x: auto; margin: 0; }"
+      "css": ".ds-code-block { font-family: 'Berkeley Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 87.5%; line-height: 1.3; color: #2d2d2d; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 16px; overflow-x: auto; margin: 0; }"
     },
     {
       "name": "Blockquote",
       "kind": "custom",
       "description": "4px accent spine, tinted background, asymmetric radius, no italics.",
       "html": "<blockquote class=\"ds-quote\"><p>The blue team copies the trick and misses the design flaw that makes it reliable.</p></blockquote>",
-      "css": ".ds-quote { border-left: 4px solid #1a6dd4; background: #f0f6ff; padding: 1em 1.5em; border-radius: 0 8px 8px 0; color: #374151; font-style: normal; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.7; margin: 0; } .ds-quote p { margin: 0 0 0.5em; } .ds-quote p:last-child { margin-bottom: 0; }"
+      "css": ".ds-quote { border-left: 4px solid #1a6dd4; background: #f0f6ff; padding: 1em 1.5em; border-radius: 0 8px 8px 0; color: #374151; font-style: normal; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 17px; line-height: 1.7; margin: 0; } .ds-quote p { margin: 0 0 0.5em; } .ds-quote p:last-child { margin-bottom: 0; }"
     },
     {
       "name": "Post List Entry",
       "kind": "custom",
       "description": "Year-grouped archive row: uppercase date label, weight-500 title link, hairline separator.",
       "html": "<ul class=\"ds-post-list\"><li class=\"ds-post-item\"><span class=\"ds-post-meta\">Jun 6, 2026</span><h3 class=\"ds-post-title\"><a class=\"ds-post-link\" href=\"#\">PowerShell Conference Europe 2026</a></h3></li></ul>",
-      "css": ".ds-post-list { list-style: none; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; } .ds-post-item { padding-bottom: 1.5em; border-bottom: 1px solid #e5e7eb; margin-bottom: 1.5em; } .ds-post-meta { font-size: 0.85em; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.6; } .ds-post-title { margin: 0.2em 0 0; font-weight: 500; } .ds-post-link { color: #1a1a2e; text-decoration: none; transition: color 0.15s ease; } .ds-post-link:hover { color: #1a6dd4; }"
+      "css": ".ds-post-list { list-style: none; margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; } .ds-post-item { padding-bottom: 1.5em; border-bottom: 1px solid #e5e7eb; margin-bottom: 1.5em; } .ds-post-meta { font-size: 0.85em; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.6; } .ds-post-title { margin: 0.2em 0 0; font-weight: 500; } .ds-post-link { color: #1a1a2e; text-decoration: none; transition: color 0.15s ease; } .ds-post-link:hover { color: #1a6dd4; }"
     }
   ],
   "narrative": {
     "northStar": "The Terminal, Warmed Up",
-    "overview": "The site is a reading instrument for long-form technical writing. Chrome recedes. Words and code carry everything. The light theme is near-white paper with one disciplined blue accent; the dark theme is where the personality lives — headings and accents flip to magenta and coral phosphor on near-black, like a terminal that learned to glow. Typography is the system font stack at a generous 17px/1.7 body, with JetBrains Mono reserved strictly for code.\n\nDensity is moderate and text-first: a single 960px column, year-grouped post archive, sticky table-of-contents on wide screens. Nothing on the page competes with the content. Components are quiet and functional — hover states are color shifts, not motion events.",
+    "overview": "The site is a reading instrument for long-form technical writing. Chrome recedes. Words and code carry everything. The light theme is near-white paper with one disciplined blue accent; the dark theme is where the personality lives — headings and accents flip to magenta and coral phosphor on near-black, like a terminal that learned to glow. Typography pairs Berkeley Mono (headings, code — the terminal voice) with Inter (body), both self-hosted, at a generous 17px/1.7 body.\n\nDensity is moderate and text-first: a single 960px column, year-grouped post archive, sticky table-of-contents on wide screens. Nothing on the page competes with the content. Components are quiet and functional — hover states are color shifts, not motion events.",
     "keyCharacteristics": [
       "Single accent discipline in light mode (one blue, used sparingly)",
       "Dual identity: reserved light theme vs. phosphor-glow dark theme",

@@ -26,26 +26,26 @@ colors:
   pale-coral: "#ffab9d"
 typography:
   body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.7
   headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontWeight: 500
+    fontFamily: "'Berkeley Mono', 'SF Mono', 'Cascadia Code', Menlo, Monaco, Consolas, monospace"
+    fontWeight: 700
     lineHeight: 1.2
   title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    fontWeight: 600
+    fontFamily: "'Berkeley Mono', 'SF Mono', 'Cascadia Code', Menlo, Monaco, Consolas, monospace"
+    fontWeight: 700
     lineHeight: 1.2
   label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "0.85em"
     fontWeight: 400
     letterSpacing: "0.5px"
     textTransform: "uppercase"
   mono:
-    fontFamily: "'JetBrains Mono', 'SF Mono', 'Cascadia Code', Menlo, Monaco, Consolas, monospace"
+    fontFamily: "'Berkeley Mono', 'SF Mono', 'Cascadia Code', Menlo, Monaco, Consolas, monospace"
     fontSize: "85%"
     lineHeight: 1.3
 rounded:
@@ -92,7 +92,7 @@ components:
 
 **Creative North Star: "The Terminal, Warmed Up"**
 
-The site is a reading instrument for long-form technical writing. Chrome recedes. Words and code carry everything. The light theme is near-white paper with one disciplined blue accent; the dark theme is where the personality lives — headings and accents flip to magenta and coral phosphor on near-black, like a terminal that learned to glow. Typography is the system font stack at a generous 17px/1.7 body, with JetBrains Mono reserved strictly for code.
+The site is a reading instrument for long-form technical writing. Chrome recedes. Words and code carry everything. The light theme is near-white paper with one disciplined blue accent; the dark theme is where the personality lives — headings and accents flip to magenta and coral phosphor on near-black, like a terminal that learned to glow. Typography pairs Berkeley Mono (headings, code — the terminal voice) with Inter (body — the quiet counterweight), both self-hosted, at a generous 17px/1.7 body.
 
 Density is moderate and text-first: a single 960px column, year-grouped post archive, sticky table-of-contents on wide screens. Nothing on the page competes with the content. Components are quiet and functional — hover states are color shifts, not motion events.
 
@@ -141,29 +141,27 @@ The palette is a near-white neutral field with one blue accent in light mode; da
 
 ## Typography
 
-**Display Font:** none — the site has no display type.
-**Body Font:** system stack (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto…) at 17px/1.7
-**Label/Mono Font:** JetBrains Mono (Google Fonts, weights 400–600) for code; system stack at 0.85em uppercase for metadata labels
+**Display Font:** Berkeley Mono (self-hosted variable, weights 400/700 + obliques) for all headings, the site title, and code.
+**Body Font:** Inter (self-hosted variable 100–900 + italic) at 17px/1.7.
+**Label Font:** Inter at 0.85em uppercase for metadata labels.
 
-**Character:** Deliberately unbranded body text that reads natively on every platform, punctuated by a real monospace face for code. The personality lives in the words, not the letterforms.
+**Character:** Berkeley Mono's warm, rounded monospace carries the personality — it owns headings and code, so the site's structure itself is typed in the terminal voice. Inter is the quiet counterweight: dense, neutral, highly legible long-form body text that lets the mono do the talking. Self-hosted throughout; no Google Fonts.
 
 ### Hierarchy
-- **Title** (600, minima default sizes, 1.2): post titles, site title. Site title also gets -0.5px letter-spacing.
-- **Headline** (500, 1.2): h1–h6, year headings, post-list links. Weight 500, not 700 — emphasis through color and structure, not heaviness.
-- **Body** (400, 17px, 1.7): long-form reading. Paragraph spacing 1.3em.
-- **Label** (400, 0.85em, +0.5px tracking, uppercase): dates and post metadata.
-- **Mono** (400–600, 85% of context size, 1.3): inline code and fenced blocks.
+- **Title** (Berkeley Mono 700, minima default sizes, 1.2): post titles, site title. Site title also gets -0.5px letter-spacing.
+- **Headline** (Berkeley Mono 700, 1.2): h1–h6, year headings, post-list links.
+- **Body** (Inter 400, 17px, 1.7): long-form reading. Paragraph spacing 1.3em.
+- **Label** (Inter 400, 0.85em, +0.5px tracking, uppercase): dates and post metadata.
+- **Mono** (Berkeley Mono 400–700, 85% of context size, 1.3): inline code and fenced blocks.
 
 ### Named Rules
 **The ASCII Art Rule.** Code fenced as `art`, `text`, `ascii`, or `plaintext` renders at line-height 1.0 — ASCII diagrams must survive. This overrides the mono default.
-
-**The No-Bold-Headings Rule.** Headings run at weight 500 (titles 600). Weight 700 appears only in the TOC panel's "On this page" label and table headers.
 
 ## Layout
 
 Single centered column, 960px max width (`$content-width`), minima breakpoints at 960px (laptop) and 600px (palm). The home page is a year-grouped archive: year headings with a 2px accent underline, post entries separated by hairlines. Post pages are one column of prose with a bordered header.
 
-At ≥1200px the post TOC escapes the flow: it floats right, sticks at top: 2em, and hangs 260px into the margin (width 220px, margin-right: -260px) — a marginal note, not a sidebar. Below 1200px it renders as a boxed "On this page" panel above the content.
+At ≥1520px the post TOC escapes the flow: it floats right, sticks at top: 2em, and hangs into the right margin (width 220px, margin-right: -282px) — a marginal note, not a sidebar. The breakpoint is set so the box always clears the content column's right edge and stays onscreen. Below 1520px it renders as a boxed "On this page" panel above the content.
 
 ## Elevation & Depth
 
