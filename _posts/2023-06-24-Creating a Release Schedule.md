@@ -2,6 +2,8 @@
 title: Creating a Release Schedule
 creation_date: June 24, 2023
 modified_date: 2026-02-15
+tags: [locksmith, powershell]
+description: "Working out a monthly release cadence for Locksmith and BlueTuxedo that fits the actual humans doing the work."
 ---
 I've been working most of the morning on a release schedule for [Locksmith](https://github.com/TrimarcJake/Locksmith) and [BlueTuxedo](https://github.com/TrimarcJake/BlueTuxedo) (still private!) that suits the teams working on each. 
 

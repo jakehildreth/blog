@@ -2,11 +2,13 @@
 creation_date: 2026-02-15
 modified_date: 2026-06-07
 title: "Exploring ESC5: Abusing The certificateTemplates Attribute"
+description: "One misplaced ACE on a CA's certificateTemplates property can hand over your forest. How ESC5-style abuse of that attribute works, and how to spot it."
+tags: [adcs, security, escalator]
 ---
 Hello, friends!
 
 A [couple weeks ago](https://jakehildreth.github.io/blog/2026/01/31/Introducing-Dangling-Templates.html), I introduced the concept of "dangling" certificate templates in Active Directory Certificate Services (AD CS). This little bit of AD CS weirdness quickly became my most popular article even though it requires multiple misconfigurations to exist for successful abuse. While I've seen this specific combination of misconfigurations in real life, what I'll describe in this article is much more common and could happen with a **single** misplaced access control entry (ACE) on a single property: `certificateTemplates`.
-# The Scenario
+## The Scenario
 Imagine you're a motivated network defender. You hire a penetration testing firm to find and poke the squishy bits of your network. They *immediately* find a certificate template which meets the following conditions:
 
 - Creates certificates that can be used for **client authentication**
@@ -19,6 +21,7 @@ Imagine you're a motivated network defender. You hire a penetration testing firm
 This set of conditions describe the infamous "ESC1" template. Templates that match this set of conditions are extremely dangerous because they **allow low-privileged principals to request and immediately receive a certificate that can be used to authenticate as any other principal in the environment**, including AD Admins or Domain Controllers. 😱 Bad stuff.
 
 The pentest firm uses the template to request a certificate that allows them to impersonate your Domain Admin account. With a certificate in hand, they authenticate as your DA and perform a DCSync attack.
+*GAME OVER.*
 ```art
  ▄█▀▀▀▀  ▄█▀█▄  ██▄ ▄██ ██▀▀▀▀▀   ▄█▀▀▀█▄ ██   ██ ██▀▀▀▀▀ ██▀▀▀█▄
 ██  ▄▄▄ ██   ██ ██▀█▀██ ██▄▄▄▄    ██   ██ ██▄ ▄██ ██▄▄▄▄  ██  ▄██
@@ -28,7 +31,7 @@ The pentest firm uses the template to request a certificate that allows them to 
 ## An Easy Fix!
 Being a motivated defender 💙, you immediately disable this template on all Issuing Certification Authorities (CAs) in your environment. The penetration testing firm congratulates you on your quick attention to the matter, your CISO gives you a 50% bonus, and your manager gives you a pony.
 ## Not So Fast!
-Twelve months later, a different penetration testing firm tests your environment and gets to Domain Admin using **the very same template** you disabled after last year's test! Your manager takes away your pony. 😭
+*GAME OVER. AGAIN.*
 ```art
  ▄█▀▀▀▀  ▄█▀█▄  ██▄ ▄██ ██▀▀▀▀▀   ▄█▀▀▀█▄ ██   ██ ██▀▀▀▀▀ ██▀▀▀█▄
 ██  ▄▄▄ ██   ██ ██▀█▀██ ██▄▄▄▄    ██   ██ ██▄ ▄██ ██▄▄▄▄  ██  ▄██
@@ -39,7 +42,7 @@ Twelve months later, a different penetration testing firm tests your environment
         ██▀▀▀██ ▀█▄  ██ ██▀▀▀██    ██   ██  ▀██    ██ ▀█▄ 
         ▀▀   ▀▀   ▀▀▀▀▀ ▀▀   ▀▀  ▀▀▀▀▀▀ ▀▀   ▀▀         ▀▀
 ```
-# What Happened?
+## What Happened?
 As described in the [dangling templates article](https://jakehildreth.github.io/blog/2026/01/31/Introducing-Dangling-Templates.html), the only thing that defines whether a certificate template is enabled for enrollment is *exceedingly* dumb. 
 
 - In AD, a `pKIEnrollmentService` object represents the CA service running on a computer somewhere in your forest.
@@ -123,7 +126,7 @@ New-LS2Dashboard
 ```
 Example Dashboard:
 ![]({{ site.baseurl }}/images/Pasted%20image%2020260215070842.png)
-# Conclusion
+## Conclusion
 Disabling a dangerous certificate template is a great *first* step, but it's rarely the *last* step. If a low-privileged principal can modify the `certificateTemplates` property on a `pKIEnrollmentService` object, they can reenable that template whenever they want... and you're back to square one (minus a pony).
 
 The key takeaways:

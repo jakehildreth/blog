@@ -21,6 +21,78 @@ $base-line-height: 1.7;
 @import "minima";
 
 // ============================================================
+// UTILITIES
+// ============================================================
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ============================================================
+// MINIMA MOBILE WRAPPER FIX
+// At <=$on-laptop minima sets .wrapper to a fixed 930px max-width,
+// overflowing narrow viewports (~19px horizontal scroll at 600px).
+// ============================================================
+
+.wrapper {
+  @include media-query($on-laptop) {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+}
+
+// ============================================================
+// SKIP LINK & FOCUS
+// ============================================================
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 8px;
+  z-index: 100;
+  background: $brand-color;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s ease;
+
+  &:focus {
+    top: 8px;
+    color: #fff;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+.tag-chip:focus-visible,
+.theme-toggle:focus-visible,
+.post-nav-prev:focus-visible,
+.post-nav-next:focus-visible {
+  outline: 2px solid $brand-color;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] a:focus-visible,
+[data-theme="dark"] button:focus-visible,
+[data-theme="dark"] .tag-chip:focus-visible,
+[data-theme="dark"] .theme-toggle:focus-visible,
+[data-theme="dark"] .post-nav-prev:focus-visible,
+[data-theme="dark"] .post-nav-next:focus-visible {
+  outline-color: #ff8a80;
+}
+
+// ============================================================
 // TYPOGRAPHY
 // ============================================================
 
@@ -30,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-content {
+  overflow-wrap: break-word;
   h2 {
     margin-top: 1.5em;
     padding-bottom: 0.3em;
@@ -60,12 +133,13 @@ code {
 code {
   padding: 0.2em 0.4em;
   font-size: 85%;
-  color: #d63384;
+  color: #c2185b;
 }
 
 pre {
   padding: 16px;
   overflow-x: auto;
+  max-width: 100%;
   line-height: 1.3;
   border-radius: 8px;
 
@@ -82,6 +156,8 @@ pre {
 .highlight {
   background: #f6f8fa;
   border-radius: 8px;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 // Art theme - tight spacing for ASCII art
@@ -224,6 +300,8 @@ table {
   font-weight: 500;
   color: #1a1a2e;
   transition: color 0.15s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 
   &:hover {
     color: $brand-color;
@@ -262,6 +340,8 @@ table {
   font-weight: 600;
   color: #1a1a2e;
   line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 // ============================================================
@@ -302,8 +382,9 @@ table {
   }
 }
 
-// Sticky TOC for wide screens
-@media screen and (min-width: 1200px) {
+// Sticky TOC for wide screens: 960px column + 220px note + 2em gap needs
+// ~252px of side margin, so the margin hang only fits at >=1460px.
+@media screen and (min-width: 1460px) {
   .post-content {
     position: relative;
 
@@ -366,6 +447,143 @@ a {
 
   &:first-child {
     margin-top: 0;
+  }
+}
+
+// ============================================================
+// TAG CHIPS
+// ============================================================
+
+.post-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-left: 0.5em;
+}
+
+.tag-chip {
+  font-size: 0.72em;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: $grey-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 6px;
+  padding: 0.1em 0.55em;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: $brand-color;
+    border-color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+.tag-count {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: $grey-color;
+}
+
+.post-excerpt {
+  font-size: 0.9em;
+  color: $grey-color-dark;
+  margin-top: 0.4em;
+}
+
+// ============================================================
+// PREV / NEXT POST NAV
+// ============================================================
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid $grey-color-light;
+}
+
+.post-nav-prev,
+.post-nav-next {
+  display: flex;
+  flex-direction: column;
+  max-width: 48%;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    .post-nav-title { color: $brand-color; }
+  }
+}
+
+.post-nav-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.post-nav-label {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $grey-color;
+}
+
+.post-nav-title {
+  font-weight: 500;
+  color: $text-color;
+  transition: color 0.15s ease;
+}
+
+// ============================================================
+// AUTO TOC (long posts)
+// ============================================================
+
+.toc-auto {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.25em 1.25em 1.25em 2.5em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+
+  .toc-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-left: -1.25em;
+    color: #1a1a2e;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: 0.3em;
+  }
+
+  a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .toc-auto {
+    position: sticky;
+    top: 2em;
+    float: right;
+    width: 220px;
+    margin-left: 2em;
+    margin-right: -260px;
+    font-size: 0.82em;
   }
 }
 
@@ -478,6 +696,58 @@ a {
     border-top-color: #333;
   }
 
+
+  .tag-chip {
+    color: #888;
+    border-color: #444;
+
+    &:hover {
+      color: #ff8a80;
+      border-color: #ff8a80;
+    }
+  }
+
+  .tag-count {
+    color: #888;
+  }
+
+  .post-excerpt {
+    color: #888;
+  }
+
+  .post-nav {
+    border-top-color: #333;
+  }
+
+  .post-nav-label {
+    color: #888;
+  }
+
+  .post-nav-title {
+    color: #ccc;
+  }
+
+  .post-nav-prev:hover .post-nav-title,
+  .post-nav-next:hover .post-nav-title {
+    color: #ff8a80;
+  }
+
+  .toc-auto {
+    background: #1e1e1e;
+    border-color: #ff7bd9;
+
+    .toc-label {
+      color: #ff9de5;
+    }
+
+    a {
+      color: #ff8a80;
+
+      &:hover {
+        color: #ffab9d;
+      }
+    }
+  }
   .footer-col-wrapper {
     color: #888;
   }
@@ -609,5 +879,48 @@ a {
 
   .svg-icon {
     fill: #888;
+  }
+}
+
+// ============================================================
+// 404 PAGE
+// ============================================================
+
+.page-404 {
+  text-align: center;
+  padding: 3em 0 4em;
+}
+
+.lost-horse {
+  display: inline-block;
+  background: none;
+  border: 0;
+  font-size: 1.1em;
+  line-height: 1.0;
+  color: $grey-color-dark;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+.page-404-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5em;
+}
+
+.page-404-links a {
+  color: $brand-color;
+}
+
+[data-theme="dark"] {
+  .lost-horse {
+    color: #888;
+  }
+  .page-404-title {
+    color: #ff7bd9;
+  }
+  .page-404-links a {
+    color: #ff8a80;
   }
 }

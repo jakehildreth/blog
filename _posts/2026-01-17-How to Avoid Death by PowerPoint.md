@@ -2,6 +2,8 @@
 title: Avoid Death by PowerPoint
 creation_date: 2025-09-09
 modified_date: 2026-02-15
+description: "Notes from 8 CodeMash sessions on giving talks that don't kill anyone: structure, demos, and slides that support you instead of replacing you."
+tags: [conference, career]
 ---
 Hello, friends!
 

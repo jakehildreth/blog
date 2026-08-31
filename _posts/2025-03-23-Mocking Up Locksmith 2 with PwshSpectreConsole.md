@@ -2,6 +2,8 @@
 title: Mocking Up Locksmith 2 with PwshSpectreConsole
 creation_date: 2025-03-22
 modified_date: 2026-02-15
+tags: [locksmith, powershell]
+description: "Prototyping the Locksmith 2 console UI with PwshSpectreConsole while getting over the flu."
 ---
 ## Feeling Good Again!
 

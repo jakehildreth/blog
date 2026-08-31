@@ -2,6 +2,8 @@
 title: Enabling MFA on Oracle Cloud
 creation_date: July 13, 2023
 modified_date: 2026-02-15
+tags: [selfhosting, security]
+description: "Oracle Cloud wants MFA on admin accounts now. Setting it up on the free-tier box that runs the Locksmith Mattermost server."
 ---
 To keep track of tasks on Locksmith and BlueTuxedo, I run a Mattermost instance on Oracle Cloud. It's free for life and surprisingly performant.
 

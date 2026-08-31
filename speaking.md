@@ -5,8 +5,8 @@ permalink: /speaking/
 ---
 I like sharing knowledge. I'll be doing so in the following public arenas in the coming months:
 
-### Upcoming Events
-#### HIP (Hybrid Identity Protection) Conf
+## Upcoming Events
+### HIP (Hybrid Identity Protection) Conf
 * **When:** September 8-10
 * **Where:** Nashville, TN
 * **Site:** [hipconf.com](https://hipconf.com)
@@ -18,7 +18,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 	
 	This talk reframes offense as the ability to model realistic attackers, map their paths through your environment, and tie those paths to concrete controls and monitoring. Nick and Jake will use familiar techniques—password spraying, LSASS dumping, constrained/unconstrained delegation checks—as case studies in how shallow models drive bad prioritization, hero worship, and cargo-cult defenses. You’ll walk away with a more grounded attacker model and practical ideas for reshaping security culture so attackers stop being treated like wizards and their tactics start being treated like engineering signals to be designed against.
 
-#### Wild West Hackin' Fest Deadwood
+### Wild West Hackin' Fest Deadwood
 * **When:** October 8-9, 2026
 * **Where:** Deadwood, SD
 * **Site:** [hipconf.com](https://hipconf.com)
@@ -35,8 +35,8 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
     
     You'll leave with three tools you can install today, a lab you can practice in tonight, and the confidence to audit and remediate AD CS in your own environment tomorrow.
 
-### Past Events
-#### PSConfEU
+## Past Events
+### PSConfEU
 * **When:** June 1-4, 2026
 * **Where:** Wiesbaden, Hesse, Germany
 * **Site:** [psconf.eu](https://psconf.eu)
@@ -70,7 +70,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
     
     You don't have to use Stepper to get something out of this talk. The patterns apply whether you're using my module or rolling your own. If you build deployments, migrations, health checks, or any multi-step automation, you'll leave with ideas you can use immediately. Stop restarting from scratch and start building scripts that remember where they were.
 
-#### PNWPSUG
+### PNWPSUG
 * **When:** March 11, 2026 @ 9p ET
 * **Where:** [https://www.meetup.com/pacific-powershell-user-group/](https://www.meetup.com/pacific-powershell-user-group/)
 * **Talk Title:** Overcoming Certutil Challenges in PowerShell using Crescendo
@@ -78,7 +78,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
   
 	In this talk, I discussed how I used the Crescendo project to wrap `certutil.exe` to make it quite a bit more PowerShell-friendly.
 
-#### Thursday Defensive
+### Thursday Defensive
 * **When:** February 5, 2026 @ 1:30p ET.
 * **Where:** [www.thursdef.com](https://www.thursdef.com)
 * **Talk Title:** AD CS and Locksmith 2!
@@ -86,7 +86,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     I'm going to talk about the AD CS security landscape and give a quick demo of what I've built with Locksmith 2. (More to come.)
 
-#### PowerShell Wednesday
+### PowerShell Wednesday
 * **When:** January 21, 2026 @ 1:30p ET.
 * **Where:** [www.youtube.com/@pdq/streams](https://www.youtube.com/@pdq/streams)
 * **Talk Title:** From One-Liners to (Almost) Full-Fledged Applications
@@ -94,7 +94,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     In this talk, I'll trace the evolution of Locksmith from a few lines of demo code written for my first conference talk in 2022 to a full-fledged open-source tool. We'll walk through the original proof-of-concept snippets, the messy single-script version that followed, the refactoring into a proper PowerShell module, and how community feature requests and pull requests shaped the project in unexpected ways. I'll wrap up with a live demo of Locksmith 2 and share practical lessons about code architecture, open-source maintenance, and the reality of evolving a side project into something people actually use.
 
-#### CodeMash
+### CodeMash
 * **When:** January 13-16, 2026. My talk is *currently* at 2:45p ET on January 15.
 * **Where:** Kalahari Resort, Sandusky, OH
 * **Site:** [codemash.org](https://codemash.org)
@@ -103,7 +103,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     Public Key Infrastructure (PKI) has a reputation for being complicated, but it doesn’t have to be. In this talk, we'll walk together through core cryptography concepts step by step. We’ll start with symmetric encryption and shared keys, then move into asymmetric encryption, hashing, signing, and certificates. From there, we’ll connect the pieces and show how they come together in an actual PKI. Each concept builds on the last to you a clear, practical understanding of how PKI works and how to spot its components in the wild. No math, no crypto proofs, just the essentials developers need.
 
-#### Anti-Cast Training
+### Anti-Cast Training
 - **When:** November 12, 2025
 - **Where:** [Anti-Cast](antisyphontraining.com)
 - **Talk Title:** PKI Foundations for Security Pros w/ Jake Hildreth
@@ -117,7 +117,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     He’ll teach core cryptography step by step—from symmetric encryption and shared keys to asymmetric encryption, hashing, signing, and certificates—then connect it all in a working PKI.
 
-#### Queen City Con
+### Queen City Con
 * **When:** November 7, 2025
 * **Where:** Hyatt Regency, Downtown Cincinnati, OH
 * **Site:** [queencitycon.org](https://queencitycon.org)
@@ -129,7 +129,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     In this talk, we’ll walk through a bunch of ways to abuse that capability: Resource-Based Constrained Delegation attacks, AD CS shenanigans, GPO and ACL abuse, SPN-in-the-middle attacks, weird stuff with Domain Computers, and a few other surprises. We’ll dig into how it works, why it’s possible, and what you can do about it. You’ll leave knowing exactly how attackers turn “net computer /add” into Domain Admin. But more importantly, you'll learn how to properly delegate this dangerous right!
 
-#### HIP (Hybrid Identity Protection) Conf
+### HIP (Hybrid Identity Protection) Conf
 - **When:** October 7-9, 2025
 - **Where:** The Charleston Place, Charleston, SC
 - **Site:** [hipconf.com](https://hipconf.com)
@@ -138,7 +138,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     Explore a critical yet often overlooked threat: how seemingly low- or medium-severity AD CS misconfigurations, known as ESCs, can combine to compromise an entire Active Directory forest. This session, based on original research and real-world assessments, demonstrates three distinct ESC chains that escalate typical user access to Domain or Enterprise Admin. Learn why defenders often miss these risks when analyzing AD CS configurations in isolation and discover ESCalator, a PowerShell tool that surfaces escalation paths by linking multiple misconfigurations. Gain actionable insights to detect and mitigate these threats before attackers exploit them.
 
-#### PancakesCon 6
+### PancakesCon 6
 - **When:** September 21, 2025
 - **Where:** [pancakescon.com](https://pancakescon.com)
 - **Talk Title:** PKI and Powerlifting!
@@ -146,7 +146,7 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
 
     In this talk, I will provide an no-math primer on basic PKI terms. We'll start with simple concepts like symmetric encryption and shared keys all the way up to asymmetric encryption, hashing, signing, certificates, until we end up with discussion about Public Key Infrastructure. Much like each PKI term builds on the previous terms, I'll also dicusss how you can get started in Powerlifting and build your strength!
 
-#### Blue Team Con
+### Blue Team Con
 - **When:** September 6-7, 2025
 - **Where:** Fairmont Chicago, Millenium Park, Chicago, IL
 - **Site:** [blueteamcon.com](https://blueteamcon.com)

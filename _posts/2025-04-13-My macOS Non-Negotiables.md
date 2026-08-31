@@ -2,6 +2,8 @@
 title: My macOS Non-Negotiables
 creation_date: April 6, 2025
 modified_date: 2026-02-15
+tags: [macos]
+description: "I'm a macOS-first user. The apps and settings I can't live without."
 ---
 ## Intro
 [As previously discussed](_posts/2024-06-24-Virtualizing%20Windows%20Server%202025%20on%20Apple%20Silicon.md), I'm a macOS-first user. Windows and Linux and [TempleOS](https://github.com/cia-foundation/TempleOS) each have their time and place, but I'm most comfortable in front of a Mac. Over the past 19 years of Mac use, I've modified almost everything about my Macs' setups. Thanks to Time Machine, those mods persist from old machine to new machine. Unfortunately, the quirkiness of my machine sometimes results in being confused by Macs in a more pristine state like my wife's Mac (almost stock standard!)

@@ -2,11 +2,13 @@
 title: New Job! New MVP?
 creation_date: 2025-03-08
 modified_date: 2026-02-15
+tags: [career]
+description: "Two whirlwind months: a new job and an MVP award. A short journey through the FUD."
 ---
 Hi.
 
 The last two months have been a whirlwind 🌪️ for me. I was a walking ball of FUD and nerves for a while, but I think I've emerged a better person. Let's go for a little journey!
-### New Job!
+## New Job!
 In early January, I decided to leave Trimarc. I had already been looking around at various openings for a few months just to see what was available, but it took the layoff of a few co-workers before I decided to really go for it.
 
 I reached out to some friends to see what was available and was quickly pulled into interview cycles at six different companies. By the end of January I was down to just three companies, and I'd received a written offer from one of them. Written offer in hand, I put in my notice at Trimarc.
@@ -28,7 +30,7 @@ Ultimately, I decided on the consulting role. While I think I *could* be a manag
 So, on February 7, I signed the offer letter to become a Principal Security Consultant @ Semperis as a member of the Breach Preparedness & Response team! I'm team member #8 and brought the team to 50/50 US/European-based.
 ![]({{ site.baseurl }}/images/bpr.png)
 I started a couple weeks ago, and it has been wonderful so far. I've met many new and exciting people, and I have already learned *so much.* Seriously, there's so much talent at Semperis in so many different areas. I can't wait to grow here. #ForceForGood
-### New MVP?
+## New MVP?
 In mid-January, I received an email with the subject line "You’ve been nominated for the Microsoft MVP program". I thought this was a phish until I confirmed its legitimacy with the person that nominated me: Eric Woodruff of [ericonidentity.com](https://ericonidentity.com) fame. He promises he didn't nominate me just to get me over to Semperis.
 
 ![]({{ site.baseurl }}/images/suspicious.gif)

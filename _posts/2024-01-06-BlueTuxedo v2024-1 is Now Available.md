@@ -2,8 +2,10 @@
 title: BlueTuxedo v2024.1 is Now Available
 creation_date: January 6, 2024
 modified_date: 2026-02-15
+tags: [bluetuxedo, powershell]
+description: "BlueTuxedo gets its first official release and a more-or-less monthly cadence. New year, new release."
 ---
-# New Year, New Release!
+## New Year, New Release!
 BlueTuxedo is now at a place where it can start getting "official releases" - whatever that means for a tool worked on during spare time with no real commitment! Expect a release more-or-less monthly unless life happens.
 
 In this release, we added more information about what BlueTuxedo actually IS to the README, added a couple checks, and improved DHCP server identification. Also, BlueTuxedo is now available in the Powershell Gallery for ease of installation!

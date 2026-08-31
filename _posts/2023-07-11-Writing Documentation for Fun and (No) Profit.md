@@ -2,6 +2,8 @@
 title: Writing Documentation for Fun and (No) Profit
 creation_date: July 11, 2023
 modified_date: 2026-02-15
+tags: [career]
+description: "I actually enjoy writing process docs. On breaking complex work down into repeatable steps that don't make people cry."
 ---
 I know it may seem weird to some, but I enjoy writing process docs. I really enjoy taking a complex process, breaking it down into manageable repeatable steps, and finding the best way to explain those steps. By no means am I a great technical writer, but I don’t find it tedious (usually), so that’s something, right?
 

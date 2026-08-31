@@ -2,6 +2,8 @@
 title: Self-Hosting Pains
 creation_date: July 21, 2023
 modified_date: 2026-02-15
+tags: [selfhosting]
+description: "The Mattermost server's TLS cert is expiring and I don't want to be a sysadmin anymore. The eternal self-hosting tradeoff."
 ---
 I host the Locksmith/BlueTuxedo Mattermost server on Oracle Cloud. It's free and fast, so why not?
 

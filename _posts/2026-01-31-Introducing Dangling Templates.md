@@ -2,6 +2,8 @@
 title: A Tiny Privilege Escalation by Abusing Dangling Templates
 creation_date: 2026-01-8
 modified_date: 2026-02-15
+description: "Delete an enabled certificate template and its name can stick around on the CA; recreate the template and it's silently enabled. A tiny privilege escalation hiding in AD CS."
+tags: [adcs, security, escalator]
 ---
 Hello, friends!
 
@@ -19,8 +21,7 @@ I reported the issue to MSRC who quickly closed the case. It turns out, I'd misu
 
 I know I just barfed a bunch of terms that sound like nonsense to the uninitiated, so let's break it down. (If you're familiar with AD and/or AD CS, you can [skip to the fun stuff.](#the-fun-stuff))
 
-### First... What is an Object?
-An object is a logical construct used in computing used to represent *things*. Objects can represent anything... literally anything: physical items, files, monitor sizes, connection states, a user, fantastical beasts dreamed up by the wicked, whatever. If you can describe a thing, you can create an object to represent it. Objects have properties that describe them.
+## First... What is an Object?
 
 For example: I could create a `$car` object that represents my real-life car. I would define the following properties for it:
 * **Color:** Red
@@ -72,7 +73,7 @@ Side note: A disabled template will not be visible and *should* not be usable...
 
 Alright, enough background. It's time for...
 
-# The Fun Stuff
+## The Fun Stuff
 
 I'd like to shed light on the concept of "dangling templates" in AD CS and demonstrate how they can be exploited to enable a certificate template for enrollment *without requiring the typical rights.*
 

@@ -27,6 +27,12 @@ url: jakehildreth.github.io # the base hostname & protocol for your site, e.g. h
 github_username:  jakehildreth
 author: Jake Hildreth
 
+# Header nav: explicit allowlist so PRODUCT.md/DESIGN.md (agent docs) never leak in
+header_pages:
+  - about.md
+  - speaking.md
+  - tags.md
+
 # Build settings
 theme: minima
 plugins:
@@ -52,5 +58,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-minima:
-  show_excerpts: true
+show_excerpts: true

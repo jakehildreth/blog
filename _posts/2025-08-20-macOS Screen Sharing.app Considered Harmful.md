@@ -2,6 +2,8 @@
 title: macOS Screen Sharing.app Considered Harmful
 creation_date: 2025-08-19
 modified_date: 2026-02-15
+tags: [macos, security]
+description: "My first macOS security dig: why Screen Sharing.app deserves suspicion."
 ---
 ## Babby's First macOS Security Report
 Despite being my daily driver at both work and home, I've never dug too much into macOS security. I very occasionally read stuff from Patrick Wardle, but he's the only macOS security researcher I can name. I have little idea how most of the macOS gooey bits operate, and honestly, I'm fine with it.

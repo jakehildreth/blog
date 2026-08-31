@@ -2,6 +2,8 @@
 title: Restoring a Mistakenly-Deleted Branch in GitHub
 creation_date: October 26, 2024
 modified_date: 2026-02-15
+tags: [career]
+description: "I deleted the wrong branch mid-ESC8-detection work. Here's how to get it back."
 ---
 ## Back Story
 

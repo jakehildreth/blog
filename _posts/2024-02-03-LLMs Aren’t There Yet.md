@@ -2,6 +2,8 @@
 title: LLMs Aren’t There Yet
 creation_date: February 3, 2024
 modified_date: 2026-02-15
+tags: [llms]
+description: "I spent too many hours asking local LLMs to write a basic PowerShell function. They are not there yet."
 ---
 I just spent way too many hours installing local LLMs and asking them to write a super basic function:
 

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-30T00:00:00Z",
+  "title": "Design System: ...horse?",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Horse Blue", "canonical": "#1a6dd4", "tonalRamp": ["#0a2f5e", "#104584", "#155cb4", "#1a6dd4", "#4a8fde", "#7fb0e8", "#b5d1f2", "#eaf2fb"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#2d2d2d", "tonalRamp": ["#0a0a0a", "#1c1c1c", "#2d2d2d", "#4a4a4a", "#6e6e6e", "#969696", "#c2c2c2", "#f0f0f0"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#fdfdfd", "tonalRamp": ["#1a1a1a", "#3d3d3d", "#636363", "#8f8f8f", "#bababa", "#dddddd", "#f2f2f2", "#fdfdfd"] },
+      "terminal-black": { "role": "neutral", "displayName": "Terminal Black", "canonical": "#121212", "tonalRamp": ["#000000", "#121212", "#2e2e2e", "#525252", "#7a7a7a", "#a6a6a6", "#d3d3d3", "#f7f7f7"] },
+      "phosphor-coral": { "role": "primary", "displayName": "Phosphor Coral", "canonical": "#ff8a80", "tonalRamp": ["#5e1f1a", "#8a322b", "#b54a3d", "#d96855", "#ff8a80", "#ffab9d", "#ffc9c0", "#ffe6e2"] },
+      "magenta-glow": { "role": "secondary", "displayName": "Magenta Glow", "canonical": "#ff7bd9", "tonalRamp": ["#4d1240", "#7a2066", "#a7338e", "#d34bb8", "#ff7bd9", "#ff9de5", "#ffc0ee", "#ffe3f8"] }
+    },
+    "typographyMeta": {
+      "body": { "displayName": "Body", "purpose": "Long-form reading at 17px/1.7; system stack so text reads natively on every platform." },
+      "headline": { "displayName": "Headline", "purpose": "h1–h6, year headings, post-list links at weight 500 — emphasis through color and structure, not heaviness." },
+      "mono": { "displayName": "Mono", "purpose": "JetBrains Mono for all code; art/text/ascii/plaintext fences force line-height 1.0 to preserve ASCII diagrams." },
+      "label": { "displayName": "Label", "purpose": "Uppercase, +0.5px tracking metadata (dates) at 0.85em." }
+    },
+    "shadows": [
+      { "name": "image-lift", "value": "0 2px 8px rgba(0, 0, 0, 0.08)", "purpose": "Post-content images only; the one shadow in the system. Dark mode uses 0.4 alpha." }
+    ],
+    "motion": [
+      { "name": "ease-color-shift", "value": "color 0.15s ease", "purpose": "All hover states are 150ms color transitions — links, nav, theme toggle. No motion events." }
+    ],
+    "breakpoints": [
+      { "name": "palm", "value": "600px" },
+      { "name": "laptop", "value": "960px" },
+      { "name": "toc-margin", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header text links; hover shifts to the theme accent with no underline.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">about</a><a class=\"ds-nav-link\" href=\"#\">speaking</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 20px; } .ds-nav-link { color: #2d2d2d; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 17px; text-decoration: none; transition: color 0.15s ease; } .ds-nav-link:hover { color: #1a6dd4; } .ds-nav-link:focus-visible { outline: 2px solid #1a6dd4; outline-offset: 2px; }"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Ghost button in the header switching light/dark; sun icon in light, moon in dark, persisted via localStorage.",
+      "html": "<button class=\"ds-theme-toggle\" aria-label=\"Toggle dark mode\" title=\"Toggle dark mode\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"5\"/><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\"/><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"/><line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\"/><line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\"/><line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\"/><line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\"/><line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\"/><line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\"/></svg></button>",
+      "css": ".ds-theme-toggle { background: none; border: 1px solid #e5e7eb; border-radius: 6px; padding: 4px 8px; cursor: pointer; color: #6b7280; display: inline-flex; align-items: center; transition: color 0.15s ease, border-color 0.15s ease; } .ds-theme-toggle:hover { color: #1a6dd4; border-color: #1a6dd4; } .ds-theme-toggle:focus-visible { outline: 2px solid #1a6dd4; outline-offset: 2px; }"
+    },
+    {
+      "name": "TOC Panel",
+      "kind": "custom",
+      "refersTo": "toc-panel",
+      "description": "'On this page' table of contents — boxed panel under 1200px, sticky marginal note at 220px hanging into the margin on wide screens.",
+      "html": "<nav class=\"ds-toc\"><span class=\"ds-toc-label\">On this page</span><ul><li><a href=\"#\">The lab setup</a></li><li><a href=\"#\">Exploiting ESC1</a></li><li><a href=\"#\">Fixing everything</a></li></ul></nav>",
+      "css": ".ds-toc { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25em 1.25em 1.25em 2.5em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.9em; } .ds-toc-label { display: block; font-weight: 700; margin-bottom: 0.5em; margin-left: -1.25em; color: #1a1a2e; } .ds-toc ul { margin: 0; padding: 0; list-style: disc; } .ds-toc li { margin-bottom: 0.3em; } .ds-toc a { color: #1a6dd4; text-decoration: none; } .ds-toc a:hover { text-decoration: underline; }"
+    },
+    {
+      "name": "Inline Code",
+      "kind": "custom",
+      "refersTo": "inline-code",
+      "description": "JetBrains Mono inline code in pink on a tinted chip; distinguishes code from links at a glance.",
+      "html": "<p class=\"ds-prose\">Run <code class=\"ds-inline-code\">Invoke-Locksmith</code> against the forest root.</p>",
+      "css": ".ds-prose { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.7; color: #2d2d2d; } .ds-inline-code { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 85%; color: #d63384; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.2em 0.4em; }"
+    },
+    {
+      "name": "Code Block",
+      "kind": "custom",
+      "refersTo": "code-block",
+      "description": "Fenced code: tonal panel, 8px radius, horizontal scroll, Rouge syntax highlighting.",
+      "html": "<pre class=\"ds-code-block\"><code>Get-ADObject -Filter 'objectClass -eq \"pKIEnrollmentService\"' `</br>  -SearchBase $ConfigNC</code></pre>",
+      "css": ".ds-code-block { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; font-size: 87.5%; line-height: 1.3; color: #2d2d2d; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 16px; overflow-x: auto; margin: 0; }"
+    },
+    {
+      "name": "Blockquote",
+      "kind": "custom",
+      "description": "4px accent spine, tinted background, asymmetric radius, no italics.",
+      "html": "<blockquote class=\"ds-quote\"><p>The blue team copies the trick and misses the design flaw that makes it reliable.</p></blockquote>",
+      "css": ".ds-quote { border-left: 4px solid #1a6dd4; background: #f0f6ff; padding: 1em 1.5em; border-radius: 0 8px 8px 0; color: #374151; font-style: normal; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.7; margin: 0; } .ds-quote p { margin: 0 0 0.5em; } .ds-quote p:last-child { margin-bottom: 0; }"
+    },
+    {
+      "name": "Post List Entry",
+      "kind": "custom",
+      "description": "Year-grouped archive row: uppercase date label, weight-500 title link, hairline separator.",
+      "html": "<ul class=\"ds-post-list\"><li class=\"ds-post-item\"><span class=\"ds-post-meta\">Jun 6, 2026</span><h3 class=\"ds-post-title\"><a class=\"ds-post-link\" href=\"#\">PowerShell Conference Europe 2026</a></h3></li></ul>",
+      "css": ".ds-post-list { list-style: none; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; } .ds-post-item { padding-bottom: 1.5em; border-bottom: 1px solid #e5e7eb; margin-bottom: 1.5em; } .ds-post-meta { font-size: 0.85em; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.6; } .ds-post-title { margin: 0.2em 0 0; font-weight: 500; } .ds-post-link { color: #1a1a2e; text-decoration: none; transition: color 0.15s ease; } .ds-post-link:hover { color: #1a6dd4; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Terminal, Warmed Up",
+    "overview": "The site is a reading instrument for long-form technical writing. Chrome recedes. Words and code carry everything. The light theme is near-white paper with one disciplined blue accent; the dark theme is where the personality lives — headings and accents flip to magenta and coral phosphor on near-black, like a terminal that learned to glow. Typography is the system font stack at a generous 17px/1.7 body, with JetBrains Mono reserved strictly for code.\n\nDensity is moderate and text-first: a single 960px column, year-grouped post archive, sticky table-of-contents on wide screens. Nothing on the page competes with the content. Components are quiet and functional — hover states are color shifts, not motion events.",
+    "keyCharacteristics": [
+      "Single accent discipline in light mode (one blue, used sparingly)",
+      "Dual identity: reserved light theme vs. phosphor-glow dark theme",
+      "Code as a first-class citizen (mono family, fenced blocks, ASCII-art line-height mode)",
+      "Text-first layouts; imagery appears only inside posts",
+      "No shadows except on post images; depth conveyed by borders and tonal panels"
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Light mode has exactly one accent (Horse Blue) and it never fills a surface — it appears only as text color, hairline border, or 4px top stripe. Its rarity is the point.", "section": "colors" },
+      { "name": "The Phosphor Rule", "body": "Dark mode is not an inversion of light mode; it is a different personality. Coral for interactive elements (links), magenta for structure (headings, borders). Never mix the two roles.", "section": "colors" },
+      { "name": "The ASCII Art Rule", "body": "Code fenced as art, text, ascii, or plaintext renders at line-height 1.0 — ASCII diagrams must survive. This overrides the mono default.", "section": "typography" },
+      { "name": "The No-Bold-Headings Rule", "body": "Headings run at weight 500 (titles 600). Weight 700 appears only in the TOC panel's 'On this page' label and table headers.", "section": "typography" },
+      { "name": "The Flat Chrome Rule", "body": "No shadows on UI chrome — header, footer, nav, TOC, code blocks, tables. Depth on chrome is conveyed by hairline borders and tonal panels only. Shadows belong to content imagery.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep light mode to one accent; add hierarchy with greys and structure, not new hues.",
+      "Do preserve the coral/magenta role split in dark mode — coral interactive, magenta structural.",
+      "Do use the art/text/ascii/plaintext fence classes for ASCII diagrams (line-height 1.0 is load-bearing).",
+      "Do size post images with the {: .half} and {: .small} kramdown classes instead of inline styles.",
+      "Do let the TOC marginal note stay in the margin — 220px wide, sticky, hanging past the column on >=1200px."
+    ],
+    "donts": [
+      "Don't add shadows to chrome. Flat surfaces, hairline borders, tonal panels.",
+      "Don't introduce a second accent hue in light mode (inline-code pink is grandfathered; nothing else joins it).",
+      "Don't use weight 700+ for headings; 500/600 is the ceiling.",
+      "Don't add display typography or hero blocks — the site opens with the archive, and that is the design.",
+      "Don't break the dark theme's syntax palette (coral/magenta Rouge classes) when touching code styles."
+    ]
+  }
+}

@@ -2,6 +2,8 @@
 title: Presenting Tactical Speed Square
 creation_date: July 30, 2023
 modified_date: 2026-02-15
+tags: [homelab]
+description: "Couch-bound after hernia surgery, so obviously I built the thing the Locksmith team needed: a standardized test harness. Aka The UnLocksmith."
 ---
 **aka The UnLocksmith**
 
