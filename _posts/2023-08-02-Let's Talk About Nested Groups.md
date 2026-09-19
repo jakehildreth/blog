@@ -1,7 +1,7 @@
 ---
 title: Let's Talk About Nested Groups
 creation_date: August 2, 2023
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [security, powershell]
 description: "Almost every AD environment I assess has a nested-group mess. On why they're invisible, dangerous, and worth untangling."
 ---

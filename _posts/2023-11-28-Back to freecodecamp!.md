@@ -1,7 +1,7 @@
 ---
 title: Back to freecodecamp!
 creation_date: November 28, 2023
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [learning]
 description: "Blazor was fun, but I need actual C# fundamentals before I can do anything real. Back to freecodecamp."
 ---

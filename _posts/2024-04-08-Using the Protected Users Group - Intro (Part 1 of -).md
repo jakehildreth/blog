@@ -1,7 +1,7 @@
 ---
 title: Using the Protected Users Group - Intro (Part 1 of ?)
 creation_date: April 8, 2024
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [security]
 description: "The Protected Users group enforces a stack of non-configurable protections on its members. Part 1 of a series on actually using it."
 ---

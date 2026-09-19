@@ -1,7 +1,7 @@
 ---
 title: A Function… in an Object?
 creation_date: February 22, 2024
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [powershell]
 description: "You can store a PowerShell function inside an object and transmit it over a PSSession. You do now."
 ---

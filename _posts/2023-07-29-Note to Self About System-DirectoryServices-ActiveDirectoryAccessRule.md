@@ -1,7 +1,7 @@
 ---
 title: Note to Self About System.DirectoryServices.ActiveDirectoryAccessRule
 creation_date: July 29, 2023
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [powershell, security]
 description: "Hey dummy: you have to use the proper .NET types for every argument of ActiveDirectoryAccessRule. A note-to-self so I stop re-learning this."
 ---

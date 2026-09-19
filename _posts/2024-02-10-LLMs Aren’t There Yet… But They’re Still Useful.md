@@ -1,7 +1,7 @@
 ---
 title: LLMs Aren’t There Yet… But They’re Still Useful
 creation_date: February 10, 2024
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [llms]
 description: "Second round with the LLMs: stop asking them to do what I already know, start asking what I don't. More useful."
 ---

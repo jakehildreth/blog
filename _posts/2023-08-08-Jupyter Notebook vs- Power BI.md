@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook vs. Power BI
 creation_date: August 8, 2023
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [learning]
 description: "Should Locksmith's remediation guide be a Jupyter Notebook? Thinking through JN vs Power BI for findings reports."
 ---

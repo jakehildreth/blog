@@ -1,7 +1,7 @@
 ---
 title: Locksmith Rework, Day 1
 creation_date: July 8, 2023
-modified_date: 2026-08-30
+modified_date: 2026-08-31
 tags: [locksmith, powershell]
 description: "6:16am on a Saturday, rebuilding Locksmith with Przemyslaw Klys's module tooling... and hitting every dependency problem on the way."
 ---
