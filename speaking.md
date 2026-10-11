@@ -4,25 +4,65 @@ title: speaking
 permalink: /speaking/
 ---
 I like sharing knowledge. I'll be doing so in the following public arenas in the coming months:
-
 ## Upcoming Events
-### HIP (Hybrid Identity Protection) Conf
-* **When:** September 8-10
-* **Where:** Nashville, TN
-* **Site:** [hipconf.com](https://hipconf.com)
-* **Talk Title:** Attackers Aren’t Wizards: Turning Red Team Lore into Real Controls
-* **Co-presenter:** [Nick Vailensi](https://www.linkedin.com/in/nicholas-valiensi-2868278b/)
+
+### Anti-Cast Training
+- **When:** Noon EST, January 13, 2027
+- **Where:** [Anti-Cast](antisyphontraining.com)
+- **Talk Title:** Goat, Escalator, Locksmith: AD CS in Three Acts
+- **Abstract:**
+
+	Active Directory Certificate Services is everywhere, it's almost always misconfigured, and most organizations have no idea how bad it really is. In this talk, we'll walk through the entire AD CS security lifecycle — from building a vulnerable lab, to exploiting it, to fixing everything — using three open-source PowerShell tools purpose-built for the job.
+    
+    Act I: The Goat. We start by deploying a deliberately vulnerable AD CS environment using ADCSGoat. In minutes, we'll stand up a lab packed with real-world misconfigurations that mirror what you'd find in production environments everywhere. No manual setup, no guesswork. Just Install-ADCSGoat and you've got a playground full of terrible decisions.
+    
+    Act II: The ESCalator. With our lab in place, we turn attacker. ESCalator identifies exploitable AD CS issue combinations that aren't always obvious on their own, the kind of chained misconfigurations that quietly hand over the keys to your forest. We'll walk through how these escalation paths work and why traditional template-by-template reviews miss them.
+    
+    Act III: The Locksmith. Now we fix it. Locksmith 2 scans the environment for ESC1 through ESC16 vulnerabilities, generates targeted PowerShell remediation scripts, and even provides revert scripts so you can undo changes if something breaks. We'll demo the interactive TUI and show how a defender can go from "we \*have\* a problem" to "we \*had\* a problem" in a single sitting.
+    
+    You'll leave with three tools you can install today, a lab you can practice in tonight, and the confidence to audit and remediate AD CS in your own environment tomorrow.
+
+### CodeMash
+* **When:** January 12-15, 2027
+* **Where:** Sandusky, Ohio
+* **Site:** [codemash.org](https://codemash.org)
+* **Talk Title:** Dead on Paper, Alive in Production: Zombie Certificates Across PKINIT Implementations
 * **Abstract:**
 
-	Security culture often romanticizes the “offensive mindset,” leading teams to copy red-team tricks without understanding what those signals really mean. Both red and blue teams routinely adopt patterns like querying for adminCount=1 or chasing Kerberoasting as a “cool party trick,” while missing the underlying design flaws—weak service account practices, brittle crypto choices, or systemic delegation issues—that make these attacks so reliable.
-	
-	This talk reframes offense as the ability to model realistic attackers, map their paths through your environment, and tie those paths to concrete controls and monitoring. Nick and Jake will use familiar techniques—password spraying, LSASS dumping, constrained/unconstrained delegation checks—as case studies in how shallow models drive bad prioritization, hero worship, and cargo-cult defenses. You’ll walk away with a more grounded attacker model and practical ideas for reshaping security culture so attackers stop being treated like wizards and their tactics start being treated like engineering signals to be designed against.
+    Revoke the certificate, publish the CRL, and move on with your day. That is how certificate-based incident response is supposed to work. But "revoked" and "unable to verify" are not the same thing. When a KDC cannot determine a certificate's revocation status, some PKINIT implementations can be configured to shrug and let the certificate through anyway. The certificate is dead on paper, but it still authenticates in production. This talk introduces Zombie Certificates: authentication certificates that survive the revocation and incident-response steps we normally trust, through documented configuration paths in Microsoft, MIT, and Heimdal PKINIT... not a mysterious zero-day hiding under the floorboards.
+    
+    If you run AD CS, use smartcard logon, or authenticate with Kerberos across multiple platforms, this is your problem: resetting a password, revoking a certificate, and terminating sessions may not remove an attacker's access. I walk through the PKINIT process and show how a certificate without a CRL Distribution Point forces revocation into the vague state of "unknown," then compare how all three implementations handle that uncertainty. You will leave with a practical plan: restore fail-closed behavior on each KDC, audit CAs for configurations that strip the CRL Distribution Point, identify and replace certificates issued during affected windows, and fold certificate credentials into your incident-response playbooks before your next incident teaches you how your KDC handles uncertainty the hard way.
+
+### Antisyphon Workshop
+ - **When:** January 29, 2027
+ - **Where:** [Antisyphon Training](antisyphontraining.com)
+ - **Talk Title:** Goat, Escalator, Locksmith: An AD CS Education (Director's Cut) 
+ - **Abstract:**
+
+	Active Directory Certificate Services (AD CS) is everywhere, it's almost always misconfigured, and most organizations have no idea how bad it really is. In this workshop, you'll work through an entire AD CS education in 4 hours! You'll learn how to:
+	* deploy common AD CS vulnerabilities in a pre-built lab environment
+	* demonstrating how those vulnerabilities can be quickly and easily exploited
+	* fix everything you screwed up
+    
+    We'll walk through this process in 4 steps, each taking about an hour:
+    
+    Prelude: We'll start with some background info on AD, Public Key Infrastructure (PK), and their unholy spawn: AD CS. You'll learn basic PKI terminology, why AD CS is so prevalent in modern environments, and the current state of AD CS security.
+    
+    Act I: The Goat. With background knowledge firmly established, we'll next deploy a deliberately vulnerable AD CS environment using ADCSGoat. In minutes, we'll stand up a lab packed with real-world misconfigurations that mirror what you'd find in production environments everywhere. No manual setup, no guesswork. Just Install-ADCSGoat and you've got a playground full of terrible decisions.
+    
+    Act II: The ESCalator. With our lab in place, we turn attacker. ESCalator identifies exploitable AD CS issues that quietly hand over the keys to your forest then demonstrates exactly how easy these issues are to abuse. We'll walk through how these escalation paths work and why traditional template-by-template reviews miss some of the more esoteric vulnerabilities.
+    
+    Act III: The Locksmith. Now we fix the lab. Locksmith 2 scans the environment for ESC1 through ESC16 vulnerabilities, generates targeted PowerShell remediation scripts, and even provides revert scripts so you can undo changes if something breaks. We'll demo the interactive TUI and show how a defender can go from "we \*have\* a problem" to "we \*had\* a problem" in a single sitting.
+    
+    You'll leave with three tools you can install today, a lab you can practice in tonight, and the confidence to audit and remediate AD CS in your own environment tomorrow.
+
+## Past Events
 
 ### Wild West Hackin' Fest Deadwood
 * **When:** October 8-9, 2026
 * **Where:** Deadwood, SD
 * **Site:** [hipconf.com](https://hipconf.com)
-* **Talk Title:** The Goat, The ESCalator, and The Locksmith: A Three-Act AD CS Education
+* **Talk Title:** Goat, Escalator, Locksmith: AD CS in Three Acts
 * **Abstract:**
 
     Active Directory Certificate Services is everywhere, it's almost always misconfigured, and most organizations have no idea how bad it really is. In this talk, we'll walk through the entire AD CS security lifecycle — from building a vulnerable lab, to exploiting it, to fixing everything — using three open-source PowerShell tools purpose-built for the job.
@@ -35,7 +75,18 @@ I like sharing knowledge. I'll be doing so in the following public arenas in the
     
     You'll leave with three tools you can install today, a lab you can practice in tonight, and the confidence to audit and remediate AD CS in your own environment tomorrow.
 
-## Past Events
+### HIP (Hybrid Identity Protection) Conf
+* **When:** September 8-10
+* **Where:** Nashville, TN
+* **Site:** [hipconf.com](https://hipconf.com)
+* **Talk Title:** Attackers Aren’t Wizards: Turning Red Team Lore into Real Controls
+* **Co-presenter:** [Nick Vailensi](https://www.linkedin.com/in/nicholas-valiensi-2868278b/)
+* **Abstract:**
+
+	Security culture often romanticizes the “offensive mindset,” leading teams to copy red-team tricks without understanding what those signals really mean. Both red and blue teams routinely adopt patterns like querying for adminCount=1 or chasing Kerberoasting as a “cool party trick,” while missing the underlying design flaws—weak service account practices, brittle crypto choices, or systemic delegation issues—that make these attacks so reliable.
+	
+	This talk reframes offense as the ability to model realistic attackers, map their paths through your environment, and tie those paths to concrete controls and monitoring. Nick and Jake will use familiar techniques—password spraying, LSASS dumping, constrained/unconstrained delegation checks—as case studies in how shallow models drive bad prioritization, hero worship, and cargo-cult defenses. You’ll walk away with a more grounded attacker model and practical ideas for reshaping security culture so attackers stop being treated like wizards and their tactics start being treated like engineering signals to be designed against.
+
 ### PSConfEU
 * **When:** June 1-4, 2026
 * **Where:** Wiesbaden, Hesse, Germany
