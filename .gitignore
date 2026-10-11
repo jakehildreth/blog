@@ -7,3 +7,6 @@ Gemfile.lock
 .DS_Store
 .obsidian
 _drafts
+DESIGN.md
+PRODUCT.md
+.impeccable
