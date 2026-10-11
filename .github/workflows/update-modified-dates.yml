@@ -27,6 +27,8 @@ jobs:
           ruby-version: '3.1'
       
       - name: Update modified dates
+        env:
+          GITHUB_BEFORE: ${{ github.event.before }}
         run: ruby scripts/update_modified_dates.rb
       
       - name: Check for changes

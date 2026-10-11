@@ -4,8 +4,9 @@
 require 'date'
 
 def get_last_commit_date(file)
-  # Get the last commit date for this file in YYYY-MM-DD format
-  date_str = `git log -1 --format=%cd --date=format:%Y-%m-%d -- "#{file}"`.strip
+  # Get the last human commit date for this file in YYYY-MM-DD format,
+  # ignoring this bot's own auto-update commits
+  date_str = `git log -1 --invert-grep --grep="auto-update modified_date" --format=%cd --date=format:%Y-%m-%d -- "#{file}"`.strip
   date_str.empty? ? nil : date_str
 end
 
@@ -47,10 +48,15 @@ def update_frontmatter(file, new_date)
   end
 end
 
-def process_directory(dir)
-  return unless Dir.exist?(dir)
-  
-  Dir.glob("#{dir}/*.md").each do |file|
+def changed_files
+  # Files changed in the triggering push. GITHUB_BEFORE is the SHA before the
+  # push (set by the workflow); fall back to HEAD~1 for local runs.
+  before = ENV['GITHUB_BEFORE'] || 'HEAD~1'
+  `git diff --name-only #{before} HEAD -- _posts _drafts`.split("\n").select { |f| f.end_with?('.md') && File.exist?(f) }
+end
+
+def process_files(files)
+  files.each do |file|
     last_commit_date = get_last_commit_date(file)
     
     if last_commit_date
@@ -61,12 +67,16 @@ def process_directory(dir)
   end
 end
 
-# Process both _posts and _drafts
+# Process only files changed in the triggering push
 puts "Updating modified dates based on Git history..."
 puts "=" * 50
 
-process_directory("_posts")
-process_directory("_drafts")
+files = changed_files
+if files.empty?
+  puts "No changed posts to process."
+else
+  process_files(files)
+end
 
 puts "=" * 50
 puts "Done!"
