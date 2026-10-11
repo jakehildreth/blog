@@ -1,7 +1,7 @@
 ---
 title: Writing Documentation for Fun and (No) Profit
 creation_date: July 11, 2023
-modified_date: 2026-09-19
+modified_date: 2026-10-11
 tags: [career]
 description: "I actually enjoy writing process docs. On breaking complex work down into repeatable steps that don't make people cry."
 ---

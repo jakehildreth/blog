@@ -1,7 +1,7 @@
 ---
 title: Out-ConsoleGridView
 creation_date: August 2, 2023
-modified_date: 2026-09-19
+modified_date: 2026-10-11
 tags: [powershell]
 description: "WHY DID NO ONE TELL ME PowerShell 7 has a cross-platform grid view in the console? Out-ConsoleGridView is delightful."
 ---

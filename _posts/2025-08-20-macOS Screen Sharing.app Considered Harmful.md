@@ -1,7 +1,7 @@
 ---
 title: macOS Screen Sharing.app Considered Harmful
 creation_date: 2025-08-19
-modified_date: 2026-09-19
+modified_date: 2026-10-11
 tags: [macos, security]
 description: "My first macOS security dig: why Screen Sharing.app deserves suspicion."
 ---
