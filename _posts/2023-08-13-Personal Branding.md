@@ -1,7 +1,7 @@
 ---
 title: Personal Branding
 creation_date: August 13, 2023
-modified_date: 2026-08-31
+modified_date: 2026-09-19
 tags: [career]
 description: "I hate to admit it, but personal branding is a thing and I'm trying to build mine. Reluctantly."
 ---

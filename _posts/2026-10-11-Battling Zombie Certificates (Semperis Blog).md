@@ -1,6 +1,7 @@
 ---
 title: "Battling Zombie Certificates: The Persistent Risk Lurking in AD CS"
 creation_date: 2026-10-07
+modified_date: 2026-10-11
 ---
 Do you feel that chill in the air? Have you seen the darkness descending upon the land? Are you already tired of ham-fisted attempts to make cybersecurity spookier than it really is?
 
